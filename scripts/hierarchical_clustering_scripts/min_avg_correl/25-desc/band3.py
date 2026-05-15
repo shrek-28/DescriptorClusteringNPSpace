@@ -9,7 +9,7 @@ from scipy.spatial.distance import squareform
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-corr_df = pd.read_csv("DATA/flat_files/correlation_flat_band3_0.25_0.85.csv")
+corr_df = pd.read_csv("data/flat_files/correlation_flat_band3_0.25_0.85.csv")
 
 features = sorted(set(corr_df['feature1']).union(set(corr_df['feature2'])))
 corr_matrix = pd.DataFrame(np.eye(len(features)), index=features, columns=features)
@@ -67,23 +67,10 @@ selected_features_df = pd.DataFrame({'selected_feature': selected_features})
 
 selected_list_max_fts = selected_features_df['selected_feature'].to_list()
 
-final_df = pd.read_csv("DATA/final_complete_descriptor_matrix.csv")
+final_df = pd.read_csv("data/final_complete_descriptor_matrix.csv")
 
 final_df.set_index('identifier', inplace=True)
 final_df = final_df[selected_list_max_fts]
 
 min_corr = final_df.corr()
-plt.figure(figsize=(24, 12))
-sns.heatmap(
-    min_corr,
-    annot=True, fmt=".2f",
-    cmap='coolwarm', vmin=-1, vmax=1,
-    linewidths=0.5,
-    cbar_kws={'label': 'Spearman Correlation'}
-)
-plt.xticks(rotation=45, ha='right', fontsize=12)
-plt.yticks(fontsize=12)
-plt.tight_layout()
-
-plt.savefig("PLOTS/hierarchical-dendrograms/25desc/band3/min_avg_corr_cmatrix_25_clusters.png")
-plt.show()
+min_corr.to_csv("data/hierarchical_clustering/min_avg/25_desc/band3.csv")

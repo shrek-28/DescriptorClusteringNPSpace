@@ -21,6 +21,7 @@ for _, row in corr_df.iterrows():
     corr_matrix.loc[f2, f1] = c
 
 distance_matrix = 1 - corr_matrix.abs()
+distance_matrix.to_csv("data/hierarchical_clustering/max_avg/15_desc/band3_distance_matrix.csv")
 dist_condensed = squareform(distance_matrix.values, checks=False)
 
 Z = linkage(dist_condensed, method='average')
@@ -52,28 +53,6 @@ print(f"Number of clusters formed: {len(feature_clusters['cluster'].unique())}")
 print(f"Distance threshold used: {threshold:.4f}")
 print(feature_clusters)
 
-set_link_color_palette([
-    "#FF6F61", "#6B5B95", "#88B04B", "#F7CAC9", "#92A8D1",
-    "#955251", "#B565A7", "#009B77", "#DD4124", "#45B8AC"
-])
-
-plt.figure(figsize=(20, 8))
-dendrogram(
-    Z,
-    labels=corr_matrix.index.tolist(),
-    leaf_rotation=90,
-    leaf_font_size=8,
-    color_threshold=threshold, 
-    above_threshold_color='grey'
-)
-plt.axhline(y=threshold, color='r', linestyle='--', label=f'Threshold = {threshold:.3f}')
-plt.title("Hierarchical Clustering Dendrogram of Feature Correlations", fontsize=16)
-plt.xlabel("Features", fontsize=12)
-plt.ylabel("1 - |Correlation| (Distance)", fontsize=12)
-plt.legend()
-plt.tight_layout()
-plt.savefig("PLOTS/hierarchical-dendrograms/15desc/band3/dendrogram_15_clusters.png", dpi=300)
-
 ## PICKING THE FEATURE 
 
 selected_features = []
@@ -95,18 +74,4 @@ final_df.set_index('identifier', inplace=True)
 final_df = final_df[selected_list_max_fts]
 
 min_corr = final_df.corr()
-plt.figure(figsize=(24, 12))
-sns.heatmap(
-    min_corr,
-    annot=True, fmt=".2f",
-    cmap='coolwarm', vmin=-1, vmax=1,
-    linewidths=0.5,
-    cbar_kws={'label': 'Spearman Correlation'}
-)
-plt.xticks(rotation=45, ha='right', fontsize=12)
-plt.yticks(fontsize=12)
-plt.tight_layout()
-
-plt.savefig("PLOTS/hierarchical-dendrograms/15desc/band3/max_avg_corr_cmatrix_15_clusters.png", dpi=300)
-
-plt.show()
+min_corr.to_csv("data/hierarchical_clustering/max_avg/15_desc/band3.csv")
