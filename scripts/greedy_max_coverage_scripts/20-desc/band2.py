@@ -3,7 +3,7 @@ from collections import defaultdict
 import matplotlib.pyplot as plt 
 import seaborn as sns
 
-df = pd.read_csv("DATA/flat_files/correlation_flat_band2_0.35_0.85.csv")
+df = pd.read_csv("data/flat_files/correlation_flat_band2_0.35_0.85.csv")
 corrmat = df.drop('Unnamed: 0', axis=1)
 
 grouped_feature_ls = []
