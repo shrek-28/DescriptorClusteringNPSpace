@@ -1,0 +1,8 @@
+comparison,n_common,common_descriptors,analysis_type,desc_count,band
+greedy_max_coverage vs hierarchical_max_avg,5,"Asphericity, BertzCTIndex, FractionCSP3, Phenol, RingCount",overlap,20,band3
+greedy_max_coverage vs hierarchical_min_avg,4,"Asphericity, BridgeheadAtomCount, GraphDistanceDistributionEntropy, Phenol",overlap,20,band3
+hierarchical_max_avg vs hierarchical_min_avg,11,"Alkyne, Amine, Asphericity, Carboxylic_Acid, Chi3, Halogenated_Aromatics, Ketone, Lactam, Nitrile, Phenol, Sulfonyl",overlap,20,band3
+greedy_max_coverage vs hierarchical_max_avg vs hierarchical_min_avg,2,"Asphericity, Phenol",overlap,20,band3
+greedy_max_coverage,13,"AromaticRingCount, Avg_EState, Eccentricity, HBA, InertialShapeFactor, Max_EState, Min_EState, PMI2, ShapeIndex, SpherocityIndex, StereocenterCount, TPSA, partial_charge_max",unique,20,band3
+hierarchical_max_avg,6,"Carbonyl, Chi2, LogP, Macrocycle_count, PMI_Ratio2, ZagrebIndex",unique,20,band3
+hierarchical_min_avg,7,"AtomInformationContent, BalabanIndex, BondInformationContent, BoundingBoxVolume, Lactone, MolarRefractivity, PMI_Ratio1",unique,20,band3

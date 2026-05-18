@@ -1,0 +1,16 @@
+comparison,n_common,common_descriptors,analysis_type,desc_count,method
+band1 vs band2,12,"Asphericity, AtomInformationContent, BalabanIndex, BondInformationContent, BoundingBoxVolume, Ester, Halogenated_Aromatics, Macrocycle_count, MolWt, PMI_Ratio1, TripleBondCount, WienerIndex",overlap,20,hierarchical_min_avg
+band1 vs band3,8,"Asphericity, AtomInformationContent, BalabanIndex, BondInformationContent, BoundingBoxVolume, Halogenated_Aromatics, MolarRefractivity, PMI_Ratio1",overlap,20,hierarchical_min_avg
+band1 vs band4,8,"BalabanIndex, BondInformationContent, BoundingBoxVolume, Hydroxyl, MolWt, PMI_Ratio1, PMI_Ratio2, TripleBondCount",overlap,20,hierarchical_min_avg
+band2 vs band3,12,"Amine, Asphericity, AtomInformationContent, BalabanIndex, BondInformationContent, BoundingBoxVolume, BridgeheadAtomCount, Halogenated_Aromatics, Lactone, Nitrile, PMI_Ratio1, Phenol",overlap,20,hierarchical_min_avg
+band2 vs band4,11,"Amine, BalabanIndex, BondInformationContent, BoundingBoxVolume, BridgeheadAtomCount, HBD, Lactone, MolWt, PMI_Ratio1, TripleBondCount, partial_charge_min",overlap,20,hierarchical_min_avg
+band3 vs band4,7,"Amine, BalabanIndex, BondInformationContent, BoundingBoxVolume, BridgeheadAtomCount, Lactone, PMI_Ratio1",overlap,20,hierarchical_min_avg
+band1 vs band2 vs band3,7,"Asphericity, AtomInformationContent, BalabanIndex, BondInformationContent, BoundingBoxVolume, Halogenated_Aromatics, PMI_Ratio1",overlap,20,hierarchical_min_avg
+band1 vs band2 vs band4,6,"BalabanIndex, BondInformationContent, BoundingBoxVolume, MolWt, PMI_Ratio1, TripleBondCount",overlap,20,hierarchical_min_avg
+band1 vs band3 vs band4,4,"BalabanIndex, BondInformationContent, BoundingBoxVolume, PMI_Ratio1",overlap,20,hierarchical_min_avg
+band2 vs band3 vs band4,7,"Amine, BalabanIndex, BondInformationContent, BoundingBoxVolume, BridgeheadAtomCount, Lactone, PMI_Ratio1",overlap,20,hierarchical_min_avg
+band1 vs band2 vs band3 vs band4,4,"BalabanIndex, BondInformationContent, BoundingBoxVolume, PMI_Ratio1",overlap,20,hierarchical_min_avg
+band1,5,"Bridged_ring_count, Chi0, Quaternary_Carbons, StereocenterCount, ZagrebIndex",unique,20,hierarchical_min_avg
+band2,1,Spiro_atom_count,unique,20,hierarchical_min_avg
+band3,7,"Alkyne, Carboxylic_Acid, Chi3, GraphDistanceDistributionEntropy, Ketone, Lactam, Sulfonyl",unique,20,hierarchical_min_avg
+band4,7,"AromaticRingCount, CovalentRadiusSum, DoubleBondCount, Eccentricity, Fraction_aromatic_rings, Largest_ring_size, RadiusOfGyration",unique,20,hierarchical_min_avg

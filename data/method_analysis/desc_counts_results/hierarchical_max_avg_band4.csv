@@ -1,0 +1,16 @@
+comparison,n_common,common_descriptors,analysis_type,method,band
+10 vs 15,6,"Amine, BondInformationContent, Lactone, PMI_Ratio2, Phenol, SpherocityIndex",overlap,hierarchical_max_avg,band4
+10 vs 20,5,"Amine, BondInformationContent, Lactone, PMI_Ratio2, SpherocityIndex",overlap,hierarchical_max_avg,band4
+10 vs 25,6,"Amine, BondInformationContent, Fused_ring_count, Lactone, PMI_Ratio2, SpherocityIndex",overlap,hierarchical_max_avg,band4
+15 vs 20,14,"Amine, Avg_EState, BondInformationContent, Chi4, CovalentRadiusSum, Ester, HBA, Lactone, Largest_ring_size, PMI_Ratio2, Quaternary_Carbons, SpherocityIndex, TripleBondCount, partial_charge_min",overlap,hierarchical_max_avg,band4
+15 vs 25,14,"Amine, Avg_EState, BondInformationContent, Chi4, CovalentRadiusSum, Ester, HBA, Lactone, Largest_ring_size, PMI_Ratio2, Quaternary_Carbons, SpherocityIndex, TripleBondCount, partial_charge_min",overlap,hierarchical_max_avg,band4
+20 vs 25,19,"Amine, AromaticRingCount, Avg_EState, BertzCTIndex, BondInformationContent, Chi4, CovalentRadiusSum, Ester, Fraction_aromatic_rings, HBA, Lactone, Largest_ring_size, PMI_Ratio1, PMI_Ratio2, Quaternary_Carbons, RadiusOfGyration, SpherocityIndex, TripleBondCount, partial_charge_min",overlap,hierarchical_max_avg,band4
+10 vs 15 vs 20,5,"Amine, BondInformationContent, Lactone, PMI_Ratio2, SpherocityIndex",overlap,hierarchical_max_avg,band4
+10 vs 15 vs 25,5,"Amine, BondInformationContent, Lactone, PMI_Ratio2, SpherocityIndex",overlap,hierarchical_max_avg,band4
+10 vs 20 vs 25,5,"Amine, BondInformationContent, Lactone, PMI_Ratio2, SpherocityIndex",overlap,hierarchical_max_avg,band4
+15 vs 20 vs 25,14,"Amine, Avg_EState, BondInformationContent, Chi4, CovalentRadiusSum, Ester, HBA, Lactone, Largest_ring_size, PMI_Ratio2, Quaternary_Carbons, SpherocityIndex, TripleBondCount, partial_charge_min",overlap,hierarchical_max_avg,band4
+10 vs 15 vs 20 vs 25,5,"Amine, BondInformationContent, Lactone, PMI_Ratio2, SpherocityIndex",overlap,hierarchical_max_avg,band4
+10,3,"FractionCSP3, HeteroatomCount, Nitrile",unique,hierarchical_max_avg,band4
+15,0,,unique,hierarchical_max_avg,band4
+20,1,BridgeheadAtomCount,unique,hierarchical_max_avg,band4
+25,5,"Bridged_ring_count, Chi2, DoubleBondCount, Eccentricity, Max_EState",unique,hierarchical_max_avg,band4

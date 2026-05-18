@@ -1,0 +1,16 @@
+comparison,n_common,common_descriptors,analysis_type,method,band
+10 vs 15,10,"Asphericity, Avg_EState, BertzCTIndex, BridgeheadAtomCount, Eccentricity, FractionCSP3, GraphDistanceDistributionEntropy, PMI2, ShapeIndex, StereocenterCount",overlap,greedy_max_coverage,band3
+10 vs 20,10,"Asphericity, Avg_EState, BertzCTIndex, BridgeheadAtomCount, Eccentricity, FractionCSP3, GraphDistanceDistributionEntropy, PMI2, ShapeIndex, StereocenterCount",overlap,greedy_max_coverage,band3
+10 vs 25,10,"Asphericity, Avg_EState, BertzCTIndex, BridgeheadAtomCount, Eccentricity, FractionCSP3, GraphDistanceDistributionEntropy, PMI2, ShapeIndex, StereocenterCount",overlap,greedy_max_coverage,band3
+15 vs 20,15,"Asphericity, Avg_EState, BertzCTIndex, BridgeheadAtomCount, Eccentricity, FractionCSP3, GraphDistanceDistributionEntropy, InertialShapeFactor, Max_EState, PMI2, Phenol, ShapeIndex, SpherocityIndex, StereocenterCount, TPSA",overlap,greedy_max_coverage,band3
+15 vs 25,15,"Asphericity, Avg_EState, BertzCTIndex, BridgeheadAtomCount, Eccentricity, FractionCSP3, GraphDistanceDistributionEntropy, InertialShapeFactor, Max_EState, PMI2, Phenol, ShapeIndex, SpherocityIndex, StereocenterCount, TPSA",overlap,greedy_max_coverage,band3
+20 vs 25,18,"AromaticRingCount, Asphericity, Avg_EState, BertzCTIndex, BridgeheadAtomCount, Eccentricity, FractionCSP3, GraphDistanceDistributionEntropy, InertialShapeFactor, Max_EState, Min_EState, PMI2, Phenol, ShapeIndex, SpherocityIndex, StereocenterCount, TPSA, partial_charge_max",overlap,greedy_max_coverage,band3
+10 vs 15 vs 20,10,"Asphericity, Avg_EState, BertzCTIndex, BridgeheadAtomCount, Eccentricity, FractionCSP3, GraphDistanceDistributionEntropy, PMI2, ShapeIndex, StereocenterCount",overlap,greedy_max_coverage,band3
+10 vs 15 vs 25,10,"Asphericity, Avg_EState, BertzCTIndex, BridgeheadAtomCount, Eccentricity, FractionCSP3, GraphDistanceDistributionEntropy, PMI2, ShapeIndex, StereocenterCount",overlap,greedy_max_coverage,band3
+10 vs 20 vs 25,10,"Asphericity, Avg_EState, BertzCTIndex, BridgeheadAtomCount, Eccentricity, FractionCSP3, GraphDistanceDistributionEntropy, PMI2, ShapeIndex, StereocenterCount",overlap,greedy_max_coverage,band3
+15 vs 20 vs 25,15,"Asphericity, Avg_EState, BertzCTIndex, BridgeheadAtomCount, Eccentricity, FractionCSP3, GraphDistanceDistributionEntropy, InertialShapeFactor, Max_EState, PMI2, Phenol, ShapeIndex, SpherocityIndex, StereocenterCount, TPSA",overlap,greedy_max_coverage,band3
+10 vs 15 vs 20 vs 25,10,"Asphericity, Avg_EState, BertzCTIndex, BridgeheadAtomCount, Eccentricity, FractionCSP3, GraphDistanceDistributionEntropy, PMI2, ShapeIndex, StereocenterCount",overlap,greedy_max_coverage,band3
+10,0,,unique,greedy_max_coverage,band3
+15,0,,unique,greedy_max_coverage,band3
+20,2,"HBA, RingCount",unique,greedy_max_coverage,band3
+25,7,"Chi4, HeteroatomCount, PMI3, PathComplexityIndex, Quaternary_Carbons, TopologicalDiameter, TopologicalRadius",unique,greedy_max_coverage,band3

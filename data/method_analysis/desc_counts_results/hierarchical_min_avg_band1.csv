@@ -1,0 +1,16 @@
+comparison,n_common,common_descriptors,analysis_type,method,band
+10 vs 15,10,"AtomInformationContent, BondInformationContent, Ester, Halogenated_Aromatics, Hydroxyl, Macrocycle_count, PMI_Ratio1, Quaternary_Carbons, StereocenterCount, TripleBondCount",overlap,hierarchical_min_avg,band1
+10 vs 20,10,"AtomInformationContent, BondInformationContent, Ester, Halogenated_Aromatics, Hydroxyl, Macrocycle_count, PMI_Ratio1, Quaternary_Carbons, StereocenterCount, TripleBondCount",overlap,hierarchical_min_avg,band1
+10 vs 25,7,"AtomInformationContent, BondInformationContent, Halogenated_Aromatics, Hydroxyl, PMI_Ratio1, StereocenterCount, TripleBondCount",overlap,hierarchical_min_avg,band1
+15 vs 20,15,"AtomInformationContent, BondInformationContent, BoundingBoxVolume, Chi0, Ester, Halogenated_Aromatics, Hydroxyl, Macrocycle_count, MolWt, MolarRefractivity, PMI_Ratio1, Quaternary_Carbons, StereocenterCount, TripleBondCount, WienerIndex",overlap,hierarchical_min_avg,band1
+15 vs 25,12,"AtomInformationContent, BondInformationContent, BoundingBoxVolume, Chi0, Halogenated_Aromatics, Hydroxyl, MolWt, MolarRefractivity, PMI_Ratio1, StereocenterCount, TripleBondCount, WienerIndex",overlap,hierarchical_min_avg,band1
+20 vs 25,15,"Asphericity, AtomInformationContent, BalabanIndex, BondInformationContent, BoundingBoxVolume, Chi0, Halogenated_Aromatics, Hydroxyl, MolWt, MolarRefractivity, PMI_Ratio1, PMI_Ratio2, StereocenterCount, TripleBondCount, WienerIndex",overlap,hierarchical_min_avg,band1
+10 vs 15 vs 20,10,"AtomInformationContent, BondInformationContent, Ester, Halogenated_Aromatics, Hydroxyl, Macrocycle_count, PMI_Ratio1, Quaternary_Carbons, StereocenterCount, TripleBondCount",overlap,hierarchical_min_avg,band1
+10 vs 15 vs 25,7,"AtomInformationContent, BondInformationContent, Halogenated_Aromatics, Hydroxyl, PMI_Ratio1, StereocenterCount, TripleBondCount",overlap,hierarchical_min_avg,band1
+10 vs 20 vs 25,7,"AtomInformationContent, BondInformationContent, Halogenated_Aromatics, Hydroxyl, PMI_Ratio1, StereocenterCount, TripleBondCount",overlap,hierarchical_min_avg,band1
+15 vs 20 vs 25,12,"AtomInformationContent, BondInformationContent, BoundingBoxVolume, Chi0, Halogenated_Aromatics, Hydroxyl, MolWt, MolarRefractivity, PMI_Ratio1, StereocenterCount, TripleBondCount, WienerIndex",overlap,hierarchical_min_avg,band1
+10 vs 15 vs 20 vs 25,7,"AtomInformationContent, BondInformationContent, Halogenated_Aromatics, Hydroxyl, PMI_Ratio1, StereocenterCount, TripleBondCount",overlap,hierarchical_min_avg,band1
+10,0,,unique,hierarchical_min_avg,band1
+15,0,,unique,hierarchical_min_avg,band1
+20,2,"Bridged_ring_count, ZagrebIndex",unique,hierarchical_min_avg,band1
+25,10,"DoubleBondCount, Fraction_aromatic_rings, HBD, Largest_ring_size, PMI2, PathComplexityIndex, RadiusOfGyration, RingCount, SSSR_count, partial_charge_max",unique,hierarchical_min_avg,band1

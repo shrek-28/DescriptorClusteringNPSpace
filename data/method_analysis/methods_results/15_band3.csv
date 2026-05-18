@@ -1,0 +1,8 @@
+comparison,n_common,common_descriptors,analysis_type,desc_count,band
+greedy_max_coverage vs hierarchical_max_avg,3,"BertzCTIndex, FractionCSP3, Phenol",overlap,15,band3
+greedy_max_coverage vs hierarchical_min_avg,2,"BridgeheadAtomCount, Phenol",overlap,15,band3
+hierarchical_max_avg vs hierarchical_min_avg,9,"Alkyne, Amine, Carboxylic_Acid, Halogenated_Aromatics, Ketone, Lactam, Nitrile, Phenol, Sulfonyl",overlap,15,band3
+greedy_max_coverage vs hierarchical_max_avg vs hierarchical_min_avg,1,Phenol,overlap,15,band3
+greedy_max_coverage,11,"Asphericity, Avg_EState, Eccentricity, GraphDistanceDistributionEntropy, InertialShapeFactor, Max_EState, PMI2, ShapeIndex, SpherocityIndex, StereocenterCount, TPSA",unique,15,band3
+hierarchical_max_avg,4,"LogP, Macrocycle_count, PMI_Ratio2, SSSR_count",unique,15,band3
+hierarchical_min_avg,5,"AtomInformationContent, BondInformationContent, Lactone, MolarRefractivity, PMI_Ratio1",unique,15,band3

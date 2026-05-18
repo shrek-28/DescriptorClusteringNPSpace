@@ -1,0 +1,16 @@
+comparison,n_common,common_descriptors,analysis_type,desc_count,method
+band1 vs band2,14,"Asphericity, BalabanIndex, BertzCTIndex, Fraction_aromatic_rings, Halogenated_Aromatics, LogP, MolWt, MolarRefractivity, PMI_Ratio1, PMI_Ratio2, SSSR_count, TPSA, TripleBondCount, WienerIndex",overlap,25,hierarchical_max_avg
+band1 vs band3,9,"Asphericity, BalabanIndex, BertzCTIndex, Halogenated_Aromatics, Largest_ring_size, LogP, PMI_Ratio2, RingCount, WienerIndex",overlap,25,hierarchical_max_avg
+band1 vs band4,9,"BertzCTIndex, BondInformationContent, Chi4, DoubleBondCount, Fraction_aromatic_rings, Largest_ring_size, PMI_Ratio1, PMI_Ratio2, TripleBondCount",overlap,25,hierarchical_max_avg
+band2 vs band3,16,"Amine, Asphericity, BalabanIndex, BertzCTIndex, BridgeheadAtomCount, Carbonyl, Chi2, Halogenated_Aromatics, Lactone, LogP, Nitrile, PMI_Ratio2, Phenol, WienerIndex, ZagrebIndex, partial_charge_min",overlap,25,hierarchical_max_avg
+band2 vs band4,10,"Amine, AromaticRingCount, BertzCTIndex, Chi2, Fraction_aromatic_rings, Lactone, PMI_Ratio1, PMI_Ratio2, TripleBondCount, partial_charge_min",overlap,25,hierarchical_max_avg
+band3 vs band4,7,"Amine, BertzCTIndex, Chi2, Lactone, Largest_ring_size, PMI_Ratio2, partial_charge_min",overlap,25,hierarchical_max_avg
+band1 vs band2 vs band3,7,"Asphericity, BalabanIndex, BertzCTIndex, Halogenated_Aromatics, LogP, PMI_Ratio2, WienerIndex",overlap,25,hierarchical_max_avg
+band1 vs band2 vs band4,5,"BertzCTIndex, Fraction_aromatic_rings, PMI_Ratio1, PMI_Ratio2, TripleBondCount",overlap,25,hierarchical_max_avg
+band1 vs band3 vs band4,3,"BertzCTIndex, Largest_ring_size, PMI_Ratio2",overlap,25,hierarchical_max_avg
+band2 vs band3 vs band4,6,"Amine, BertzCTIndex, Chi2, Lactone, PMI_Ratio2, partial_charge_min",overlap,25,hierarchical_max_avg
+band1 vs band2 vs band3 vs band4,2,"BertzCTIndex, PMI_Ratio2",overlap,25,hierarchical_max_avg
+band1,6,"BoundingBoxVolume, Hydroxyl, PMI2, PathComplexityIndex, TotalPathCount, partial_charge_max",unique,25,hierarchical_max_avg
+band2,1,Macrocycle_count,unique,25,hierarchical_max_avg
+band3,7,"Alkyne, Carboxylic_Acid, FractionCSP3, GraphDistanceDistributionEntropy, Ketone, Lactam, Sulfonyl",unique,25,hierarchical_max_avg
+band4,11,"Avg_EState, Bridged_ring_count, CovalentRadiusSum, Eccentricity, Ester, Fused_ring_count, HBA, Max_EState, Quaternary_Carbons, RadiusOfGyration, SpherocityIndex",unique,25,hierarchical_max_avg

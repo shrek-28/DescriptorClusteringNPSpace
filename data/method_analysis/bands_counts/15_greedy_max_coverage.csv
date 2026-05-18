@@ -1,0 +1,16 @@
+comparison,n_common,common_descriptors,analysis_type,desc_count,method
+band1 vs band2,8,"Avg_EState, BertzCTIndex, Carbonyl, GraphDistanceDistributionEntropy, HeteroatomCount, PMI2, PathComplexityIndex, TPSA",overlap,15,greedy_max_coverage
+band1 vs band3,7,"Avg_EState, BertzCTIndex, GraphDistanceDistributionEntropy, InertialShapeFactor, PMI2, ShapeIndex, TPSA",overlap,15,greedy_max_coverage
+band1 vs band4,4,"AtomInformationContent, BertzCTIndex, HeteroatomCount, TPSA",overlap,15,greedy_max_coverage
+band2 vs band3,9,"Asphericity, Avg_EState, BertzCTIndex, BridgeheadAtomCount, Eccentricity, GraphDistanceDistributionEntropy, PMI2, SpherocityIndex, TPSA",overlap,15,greedy_max_coverage
+band2 vs band4,3,"BertzCTIndex, HeteroatomCount, TPSA",overlap,15,greedy_max_coverage
+band3 vs band4,3,"BertzCTIndex, StereocenterCount, TPSA",overlap,15,greedy_max_coverage
+band1 vs band2 vs band3,5,"Avg_EState, BertzCTIndex, GraphDistanceDistributionEntropy, PMI2, TPSA",overlap,15,greedy_max_coverage
+band1 vs band2 vs band4,3,"BertzCTIndex, HeteroatomCount, TPSA",overlap,15,greedy_max_coverage
+band1 vs band3 vs band4,2,"BertzCTIndex, TPSA",overlap,15,greedy_max_coverage
+band2 vs band3 vs band4,2,"BertzCTIndex, TPSA",overlap,15,greedy_max_coverage
+band1 vs band2 vs band3 vs band4,2,"BertzCTIndex, TPSA",overlap,15,greedy_max_coverage
+band1,4,"Bridged_ring_count, Ether, HBA, Quaternary_Carbons",unique,15,greedy_max_coverage
+band2,3,"AromaticRingCount, Largest_ring_size, TopologicalDiameter",unique,15,greedy_max_coverage
+band3,3,"FractionCSP3, Max_EState, Phenol",unique,15,greedy_max_coverage
+band4,10,"BalabanIndex, BoundingBoxVolume, Chi0, Chi1, Chi2, Chi3, Chi4, CovalentRadiusSum, RingCount, SSSR_count",unique,15,greedy_max_coverage

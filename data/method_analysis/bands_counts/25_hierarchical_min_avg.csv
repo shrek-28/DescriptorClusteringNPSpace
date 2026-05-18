@@ -1,0 +1,16 @@
+comparison,n_common,common_descriptors,analysis_type,desc_count,method
+band1 vs band2,14,"Asphericity, AtomInformationContent, BalabanIndex, BoundingBoxVolume, Fraction_aromatic_rings, HBD, Halogenated_Aromatics, MolWt, MolarRefractivity, PMI_Ratio1, PMI_Ratio2, StereocenterCount, TripleBondCount, WienerIndex",overlap,25,hierarchical_min_avg
+band1 vs band3,11,"Asphericity, AtomInformationContent, BalabanIndex, BondInformationContent, BoundingBoxVolume, HBD, Halogenated_Aromatics, Largest_ring_size, MolarRefractivity, PMI_Ratio1, WienerIndex",overlap,25,hierarchical_min_avg
+band1 vs band4,13,"BondInformationContent, BoundingBoxVolume, DoubleBondCount, Fraction_aromatic_rings, HBD, Hydroxyl, Largest_ring_size, MolWt, MolarRefractivity, PMI_Ratio1, PMI_Ratio2, RadiusOfGyration, TripleBondCount",overlap,25,hierarchical_min_avg
+band2 vs band3,17,"Amine, Asphericity, AtomInformationContent, BalabanIndex, BoundingBoxVolume, BridgeheadAtomCount, HBD, Halogenated_Aromatics, Lactone, MolarRefractivity, Nitrile, PMI_Ratio1, Phenol, Spiro_atom_count, WienerIndex, ZagrebIndex, partial_charge_min",overlap,25,hierarchical_min_avg
+band2 vs band4,13,"Amine, AromaticRingCount, BoundingBoxVolume, Fraction_aromatic_rings, HBD, Lactone, MolWt, MolarRefractivity, PMI_Ratio1, PMI_Ratio2, Spiro_atom_count, TripleBondCount, partial_charge_min",overlap,25,hierarchical_min_avg
+band3 vs band4,11,"Amine, BondInformationContent, BoundingBoxVolume, GraphDistanceDistributionEntropy, HBD, Lactone, Largest_ring_size, MolarRefractivity, PMI_Ratio1, Spiro_atom_count, partial_charge_min",overlap,25,hierarchical_min_avg
+band1 vs band2 vs band3,9,"Asphericity, AtomInformationContent, BalabanIndex, BoundingBoxVolume, HBD, Halogenated_Aromatics, MolarRefractivity, PMI_Ratio1, WienerIndex",overlap,25,hierarchical_min_avg
+band1 vs band2 vs band4,8,"BoundingBoxVolume, Fraction_aromatic_rings, HBD, MolWt, MolarRefractivity, PMI_Ratio1, PMI_Ratio2, TripleBondCount",overlap,25,hierarchical_min_avg
+band1 vs band3 vs band4,6,"BondInformationContent, BoundingBoxVolume, HBD, Largest_ring_size, MolarRefractivity, PMI_Ratio1",overlap,25,hierarchical_min_avg
+band2 vs band3 vs band4,8,"Amine, BoundingBoxVolume, HBD, Lactone, MolarRefractivity, PMI_Ratio1, Spiro_atom_count, partial_charge_min",overlap,25,hierarchical_min_avg
+band1 vs band2 vs band3 vs band4,4,"BoundingBoxVolume, HBD, MolarRefractivity, PMI_Ratio1",overlap,25,hierarchical_min_avg
+band1,6,"Chi0, PMI2, PathComplexityIndex, RingCount, SSSR_count, partial_charge_max",unique,25,hierarchical_min_avg
+band2,2,"Ester, Macrocycle_count",unique,25,hierarchical_min_avg
+band3,5,"Alkyne, Carboxylic_Acid, Ketone, Lactam, Sulfonyl",unique,25,hierarchical_min_avg
+band4,6,"Bridged_ring_count, Chi2, CovalentRadiusSum, Eccentricity, Fused_ring_count, TotalAtomCount",unique,25,hierarchical_min_avg

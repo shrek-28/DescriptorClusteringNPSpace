@@ -1,0 +1,16 @@
+comparison,n_common,common_descriptors,analysis_type,method,band
+10 vs 15,10,"AtomInformationContent, BertzCTIndex, BoundingBoxVolume, Chi0, Chi1, Chi2, Chi3, Chi4, HeteroatomCount, TPSA",overlap,greedy_max_coverage,band4
+10 vs 20,10,"AtomInformationContent, BertzCTIndex, BoundingBoxVolume, Chi0, Chi1, Chi2, Chi3, Chi4, HeteroatomCount, TPSA",overlap,greedy_max_coverage,band4
+10 vs 25,10,"AtomInformationContent, BertzCTIndex, BoundingBoxVolume, Chi0, Chi1, Chi2, Chi3, Chi4, HeteroatomCount, TPSA",overlap,greedy_max_coverage,band4
+15 vs 20,15,"AtomInformationContent, BalabanIndex, BertzCTIndex, BoundingBoxVolume, Chi0, Chi1, Chi2, Chi3, Chi4, CovalentRadiusSum, HeteroatomCount, RingCount, SSSR_count, StereocenterCount, TPSA",overlap,greedy_max_coverage,band4
+15 vs 25,15,"AtomInformationContent, BalabanIndex, BertzCTIndex, BoundingBoxVolume, Chi0, Chi1, Chi2, Chi3, Chi4, CovalentRadiusSum, HeteroatomCount, RingCount, SSSR_count, StereocenterCount, TPSA",overlap,greedy_max_coverage,band4
+20 vs 25,20,"AtomInformationContent, Avg_EState, BalabanIndex, BertzCTIndex, BoundingBoxVolume, Chi0, Chi1, Chi2, Chi3, Chi4, CovalentRadiusSum, HBA, HeteroatomCount, Max_EState, Min_EState, RingCount, RotatableBonds, SSSR_count, StereocenterCount, TPSA",overlap,greedy_max_coverage,band4
+10 vs 15 vs 20,10,"AtomInformationContent, BertzCTIndex, BoundingBoxVolume, Chi0, Chi1, Chi2, Chi3, Chi4, HeteroatomCount, TPSA",overlap,greedy_max_coverage,band4
+10 vs 15 vs 25,10,"AtomInformationContent, BertzCTIndex, BoundingBoxVolume, Chi0, Chi1, Chi2, Chi3, Chi4, HeteroatomCount, TPSA",overlap,greedy_max_coverage,band4
+10 vs 20 vs 25,10,"AtomInformationContent, BertzCTIndex, BoundingBoxVolume, Chi0, Chi1, Chi2, Chi3, Chi4, HeteroatomCount, TPSA",overlap,greedy_max_coverage,band4
+15 vs 20 vs 25,15,"AtomInformationContent, BalabanIndex, BertzCTIndex, BoundingBoxVolume, Chi0, Chi1, Chi2, Chi3, Chi4, CovalentRadiusSum, HeteroatomCount, RingCount, SSSR_count, StereocenterCount, TPSA",overlap,greedy_max_coverage,band4
+10 vs 15 vs 20 vs 25,10,"AtomInformationContent, BertzCTIndex, BoundingBoxVolume, Chi0, Chi1, Chi2, Chi3, Chi4, HeteroatomCount, TPSA",overlap,greedy_max_coverage,band4
+10,0,,unique,greedy_max_coverage,band4
+15,0,,unique,greedy_max_coverage,band4
+20,0,,unique,greedy_max_coverage,band4
+25,5,"DoubleBondCount, Ether, HeavyAtomCount, LogP, TopologicalDiameter",unique,greedy_max_coverage,band4

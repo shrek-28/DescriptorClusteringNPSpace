@@ -1,0 +1,16 @@
+comparison,n_common,common_descriptors,analysis_type,desc_count,method
+band1 vs band2,11,"Avg_EState, BertzCTIndex, Carbonyl, GraphDistanceDistributionEntropy, HBA, HeteroatomCount, InertialShapeFactor, PMI2, ShapeIndex, SpherocityIndex, TPSA",overlap,20,greedy_max_coverage
+band1 vs band3,12,"Avg_EState, BertzCTIndex, FractionCSP3, GraphDistanceDistributionEntropy, HBA, InertialShapeFactor, PMI2, RingCount, ShapeIndex, SpherocityIndex, StereocenterCount, TPSA",overlap,20,greedy_max_coverage
+band1 vs band4,10,"AtomInformationContent, Avg_EState, BertzCTIndex, Chi4, HBA, HeteroatomCount, RingCount, SSSR_count, StereocenterCount, TPSA",overlap,20,greedy_max_coverage
+band2 vs band3,14,"AromaticRingCount, Asphericity, Avg_EState, BertzCTIndex, BridgeheadAtomCount, Eccentricity, GraphDistanceDistributionEntropy, HBA, InertialShapeFactor, Max_EState, PMI2, ShapeIndex, SpherocityIndex, TPSA",overlap,20,greedy_max_coverage
+band2 vs band4,6,"Avg_EState, BertzCTIndex, HBA, HeteroatomCount, Max_EState, TPSA",overlap,20,greedy_max_coverage
+band3 vs band4,8,"Avg_EState, BertzCTIndex, HBA, Max_EState, Min_EState, RingCount, StereocenterCount, TPSA",overlap,20,greedy_max_coverage
+band1 vs band2 vs band3,9,"Avg_EState, BertzCTIndex, GraphDistanceDistributionEntropy, HBA, InertialShapeFactor, PMI2, ShapeIndex, SpherocityIndex, TPSA",overlap,20,greedy_max_coverage
+band1 vs band2 vs band4,5,"Avg_EState, BertzCTIndex, HBA, HeteroatomCount, TPSA",overlap,20,greedy_max_coverage
+band1 vs band3 vs band4,6,"Avg_EState, BertzCTIndex, HBA, RingCount, StereocenterCount, TPSA",overlap,20,greedy_max_coverage
+band2 vs band3 vs band4,5,"Avg_EState, BertzCTIndex, HBA, Max_EState, TPSA",overlap,20,greedy_max_coverage
+band1 vs band2 vs band3 vs band4,4,"Avg_EState, BertzCTIndex, HBA, TPSA",overlap,20,greedy_max_coverage
+band1,3,"Ether, PMI_Ratio2, Quaternary_Carbons",unique,20,greedy_max_coverage
+band2,4,"Largest_ring_size, PathComplexityIndex, RadiusOfGyration, TopologicalDiameter",unique,20,greedy_max_coverage
+band3,2,"Phenol, partial_charge_max",unique,20,greedy_max_coverage
+band4,8,"BalabanIndex, BoundingBoxVolume, Chi0, Chi1, Chi2, Chi3, CovalentRadiusSum, RotatableBonds",unique,20,greedy_max_coverage

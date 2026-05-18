@@ -1,0 +1,8 @@
+comparison,n_common,common_descriptors,analysis_type,desc_count,band
+greedy_max_coverage vs hierarchical_max_avg,8,"BertzCTIndex, Chi4, Fraction_aromatic_rings, LogP, PMI2, PMI_Ratio2, RingCount, SSSR_count",overlap,25,band1
+greedy_max_coverage vs hierarchical_min_avg,8,"AtomInformationContent, Fraction_aromatic_rings, HBD, PMI2, PMI_Ratio2, RingCount, SSSR_count, StereocenterCount",overlap,25,band1
+hierarchical_max_avg vs hierarchical_min_avg,20,"Asphericity, BalabanIndex, BondInformationContent, BoundingBoxVolume, DoubleBondCount, Fraction_aromatic_rings, Halogenated_Aromatics, Hydroxyl, Largest_ring_size, MolWt, MolarRefractivity, PMI2, PMI_Ratio1, PMI_Ratio2, PathComplexityIndex, RingCount, SSSR_count, TripleBondCount, WienerIndex, partial_charge_max",overlap,25,band1
+greedy_max_coverage vs hierarchical_max_avg vs hierarchical_min_avg,5,"Fraction_aromatic_rings, PMI2, PMI_Ratio2, RingCount, SSSR_count",overlap,25,band1
+greedy_max_coverage,14,"Alkyne, AromaticRingCount, Avg_EState, Carbonyl, Ether, GraphDistanceDistributionEntropy, HBA, HeteroatomCount, InertialShapeFactor, Max_EState, Min_EState, Quaternary_Carbons, ShapeIndex, SpherocityIndex",unique,25,band1
+hierarchical_max_avg,2,"TPSA, TotalPathCount",unique,25,band1
+hierarchical_min_avg,2,"Chi0, RadiusOfGyration",unique,25,band1

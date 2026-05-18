@@ -1,0 +1,16 @@
+comparison,n_common,common_descriptors,analysis_type,method,band
+10 vs 15,10,"BertzCTIndex, Carbonyl, FractionCSP3, Fused_ring_count, Halogenated_Aromatics, LogP, Macrocycle_count, PMI_Ratio2, TPSA, TripleBondCount",overlap,hierarchical_max_avg,band1
+10 vs 20,10,"BertzCTIndex, Carbonyl, FractionCSP3, Fused_ring_count, Halogenated_Aromatics, LogP, Macrocycle_count, PMI_Ratio2, TPSA, TripleBondCount",overlap,hierarchical_max_avg,band1
+10 vs 25,6,"BertzCTIndex, Halogenated_Aromatics, LogP, PMI_Ratio2, TPSA, TripleBondCount",overlap,hierarchical_max_avg,band1
+15 vs 20,14,"BertzCTIndex, Carbonyl, Chi4, FractionCSP3, Fused_ring_count, Halogenated_Aromatics, LogP, Macrocycle_count, MolWt, MolarRefractivity, PMI_Ratio2, TPSA, TripleBondCount, WienerIndex",overlap,hierarchical_max_avg,band1
+15 vs 25,10,"BertzCTIndex, Chi4, Halogenated_Aromatics, LogP, MolWt, MolarRefractivity, PMI_Ratio2, TPSA, TripleBondCount, WienerIndex",overlap,hierarchical_max_avg,band1
+20 vs 25,13,"Asphericity, BalabanIndex, BertzCTIndex, Chi4, Halogenated_Aromatics, LogP, MolWt, MolarRefractivity, PMI_Ratio1, PMI_Ratio2, TPSA, TripleBondCount, WienerIndex",overlap,hierarchical_max_avg,band1
+10 vs 15 vs 20,10,"BertzCTIndex, Carbonyl, FractionCSP3, Fused_ring_count, Halogenated_Aromatics, LogP, Macrocycle_count, PMI_Ratio2, TPSA, TripleBondCount",overlap,hierarchical_max_avg,band1
+10 vs 15 vs 25,6,"BertzCTIndex, Halogenated_Aromatics, LogP, PMI_Ratio2, TPSA, TripleBondCount",overlap,hierarchical_max_avg,band1
+10 vs 20 vs 25,6,"BertzCTIndex, Halogenated_Aromatics, LogP, PMI_Ratio2, TPSA, TripleBondCount",overlap,hierarchical_max_avg,band1
+15 vs 20 vs 25,10,"BertzCTIndex, Chi4, Halogenated_Aromatics, LogP, MolWt, MolarRefractivity, PMI_Ratio2, TPSA, TripleBondCount, WienerIndex",overlap,hierarchical_max_avg,band1
+10 vs 15 vs 20 vs 25,6,"BertzCTIndex, Halogenated_Aromatics, LogP, PMI_Ratio2, TPSA, TripleBondCount",overlap,hierarchical_max_avg,band1
+10,0,,unique,hierarchical_max_avg,band1
+15,1,RotatableBonds,unique,hierarchical_max_avg,band1
+20,3,"Chi2, Quaternary_Carbons, ZagrebIndex",unique,hierarchical_max_avg,band1
+25,12,"BondInformationContent, BoundingBoxVolume, DoubleBondCount, Fraction_aromatic_rings, Hydroxyl, Largest_ring_size, PMI2, PathComplexityIndex, RingCount, SSSR_count, TotalPathCount, partial_charge_max",unique,hierarchical_max_avg,band1

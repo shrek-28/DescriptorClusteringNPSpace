@@ -1,0 +1,16 @@
+comparison,n_common,common_descriptors,analysis_type,method,band
+10 vs 15,10,"Amine, AtomInformationContent, BondInformationContent, Halogen, Lactone, Macrocycle_count, Nitrile, PMI_Ratio1, Phenol, partial_charge_min",overlap,hierarchical_min_avg,band2
+10 vs 20,9,"Amine, AtomInformationContent, BondInformationContent, Lactone, Macrocycle_count, Nitrile, PMI_Ratio1, Phenol, partial_charge_min",overlap,hierarchical_min_avg,band2
+10 vs 25,8,"Amine, AtomInformationContent, Lactone, Macrocycle_count, Nitrile, PMI_Ratio1, Phenol, partial_charge_min",overlap,hierarchical_min_avg,band2
+15 vs 20,14,"Amine, AtomInformationContent, BalabanIndex, BondInformationContent, BridgeheadAtomCount, HBD, Lactone, Macrocycle_count, MolWt, Nitrile, PMI_Ratio1, Phenol, TripleBondCount, partial_charge_min",overlap,hierarchical_min_avg,band2
+15 vs 25,13,"Amine, AtomInformationContent, BalabanIndex, BridgeheadAtomCount, HBD, Lactone, Macrocycle_count, MolWt, Nitrile, PMI_Ratio1, Phenol, TripleBondCount, partial_charge_min",overlap,hierarchical_min_avg,band2
+20 vs 25,19,"Amine, Asphericity, AtomInformationContent, BalabanIndex, BoundingBoxVolume, BridgeheadAtomCount, Ester, HBD, Halogenated_Aromatics, Lactone, Macrocycle_count, MolWt, Nitrile, PMI_Ratio1, Phenol, Spiro_atom_count, TripleBondCount, WienerIndex, partial_charge_min",overlap,hierarchical_min_avg,band2
+10 vs 15 vs 20,9,"Amine, AtomInformationContent, BondInformationContent, Lactone, Macrocycle_count, Nitrile, PMI_Ratio1, Phenol, partial_charge_min",overlap,hierarchical_min_avg,band2
+10 vs 15 vs 25,8,"Amine, AtomInformationContent, Lactone, Macrocycle_count, Nitrile, PMI_Ratio1, Phenol, partial_charge_min",overlap,hierarchical_min_avg,band2
+10 vs 20 vs 25,8,"Amine, AtomInformationContent, Lactone, Macrocycle_count, Nitrile, PMI_Ratio1, Phenol, partial_charge_min",overlap,hierarchical_min_avg,band2
+15 vs 20 vs 25,13,"Amine, AtomInformationContent, BalabanIndex, BridgeheadAtomCount, HBD, Lactone, Macrocycle_count, MolWt, Nitrile, PMI_Ratio1, Phenol, TripleBondCount, partial_charge_min",overlap,hierarchical_min_avg,band2
+10 vs 15 vs 20 vs 25,8,"Amine, AtomInformationContent, Lactone, Macrocycle_count, Nitrile, PMI_Ratio1, Phenol, partial_charge_min",overlap,hierarchical_min_avg,band2
+10,0,,unique,hierarchical_min_avg,band2
+15,0,,unique,hierarchical_min_avg,band2
+20,0,,unique,hierarchical_min_avg,band2
+25,6,"AromaticRingCount, Fraction_aromatic_rings, MolarRefractivity, PMI_Ratio2, StereocenterCount, ZagrebIndex",unique,hierarchical_min_avg,band2

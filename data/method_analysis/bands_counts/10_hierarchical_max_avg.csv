@@ -1,0 +1,16 @@
+comparison,n_common,common_descriptors,analysis_type,desc_count,method
+band1 vs band2,6,"BertzCTIndex, FractionCSP3, Fused_ring_count, LogP, PMI_Ratio2, TripleBondCount",overlap,10,hierarchical_max_avg
+band1 vs band3,4,"BertzCTIndex, Halogenated_Aromatics, PMI_Ratio2, TripleBondCount",overlap,10,hierarchical_max_avg
+band1 vs band4,3,"FractionCSP3, Fused_ring_count, PMI_Ratio2",overlap,10,hierarchical_max_avg
+band2 vs band3,4,"Amine, BertzCTIndex, PMI_Ratio2, TripleBondCount",overlap,10,hierarchical_max_avg
+band2 vs band4,6,"Amine, FractionCSP3, Fused_ring_count, Lactone, PMI_Ratio2, Phenol",overlap,10,hierarchical_max_avg
+band3 vs band4,2,"Amine, PMI_Ratio2",overlap,10,hierarchical_max_avg
+band1 vs band2 vs band3,3,"BertzCTIndex, PMI_Ratio2, TripleBondCount",overlap,10,hierarchical_max_avg
+band1 vs band2 vs band4,3,"FractionCSP3, Fused_ring_count, PMI_Ratio2",overlap,10,hierarchical_max_avg
+band1 vs band3 vs band4,1,PMI_Ratio2,overlap,10,hierarchical_max_avg
+band2 vs band3 vs band4,2,"Amine, PMI_Ratio2",overlap,10,hierarchical_max_avg
+band1 vs band2 vs band3 vs band4,1,PMI_Ratio2,overlap,10,hierarchical_max_avg
+band1,3,"Carbonyl, Macrocycle_count, TPSA",unique,10,hierarchical_max_avg
+band2,1,Halogen,unique,10,hierarchical_max_avg
+band3,5,"Carboxylic_Acid, Ketone, Lactam, RingCount, Sulfonyl",unique,10,hierarchical_max_avg
+band4,4,"BondInformationContent, HeteroatomCount, Nitrile, SpherocityIndex",unique,10,hierarchical_max_avg

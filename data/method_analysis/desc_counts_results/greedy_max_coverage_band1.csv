@@ -1,0 +1,16 @@
+comparison,n_common,common_descriptors,analysis_type,method,band
+10 vs 15,10,"Avg_EState, BertzCTIndex, Bridged_ring_count, Ether, GraphDistanceDistributionEntropy, HeteroatomCount, PMI2, PathComplexityIndex, ShapeIndex, TPSA",overlap,greedy_max_coverage,band1
+10 vs 20,8,"Avg_EState, BertzCTIndex, Ether, GraphDistanceDistributionEntropy, HeteroatomCount, PMI2, ShapeIndex, TPSA",overlap,greedy_max_coverage,band1
+10 vs 25,7,"Avg_EState, BertzCTIndex, Ether, GraphDistanceDistributionEntropy, HeteroatomCount, PMI2, ShapeIndex",overlap,greedy_max_coverage,band1
+15 vs 20,13,"AtomInformationContent, Avg_EState, BertzCTIndex, Carbonyl, Ether, GraphDistanceDistributionEntropy, HBA, HeteroatomCount, InertialShapeFactor, PMI2, Quaternary_Carbons, ShapeIndex, TPSA",overlap,greedy_max_coverage,band1
+15 vs 25,12,"AtomInformationContent, Avg_EState, BertzCTIndex, Carbonyl, Ether, GraphDistanceDistributionEntropy, HBA, HeteroatomCount, InertialShapeFactor, PMI2, Quaternary_Carbons, ShapeIndex",overlap,greedy_max_coverage,band1
+20 vs 25,18,"AtomInformationContent, Avg_EState, BertzCTIndex, Carbonyl, Chi4, Ether, GraphDistanceDistributionEntropy, HBA, HeteroatomCount, InertialShapeFactor, PMI2, PMI_Ratio2, Quaternary_Carbons, RingCount, SSSR_count, ShapeIndex, SpherocityIndex, StereocenterCount",overlap,greedy_max_coverage,band1
+10 vs 15 vs 20,8,"Avg_EState, BertzCTIndex, Ether, GraphDistanceDistributionEntropy, HeteroatomCount, PMI2, ShapeIndex, TPSA",overlap,greedy_max_coverage,band1
+10 vs 15 vs 25,7,"Avg_EState, BertzCTIndex, Ether, GraphDistanceDistributionEntropy, HeteroatomCount, PMI2, ShapeIndex",overlap,greedy_max_coverage,band1
+10 vs 20 vs 25,7,"Avg_EState, BertzCTIndex, Ether, GraphDistanceDistributionEntropy, HeteroatomCount, PMI2, ShapeIndex",overlap,greedy_max_coverage,band1
+15 vs 20 vs 25,12,"AtomInformationContent, Avg_EState, BertzCTIndex, Carbonyl, Ether, GraphDistanceDistributionEntropy, HBA, HeteroatomCount, InertialShapeFactor, PMI2, Quaternary_Carbons, ShapeIndex",overlap,greedy_max_coverage,band1
+10 vs 15 vs 20 vs 25,7,"Avg_EState, BertzCTIndex, Ether, GraphDistanceDistributionEntropy, HeteroatomCount, PMI2, ShapeIndex",overlap,greedy_max_coverage,band1
+10,0,,unique,greedy_max_coverage,band1
+15,0,,unique,greedy_max_coverage,band1
+20,1,FractionCSP3,unique,greedy_max_coverage,band1
+25,7,"Alkyne, AromaticRingCount, Fraction_aromatic_rings, HBD, LogP, Max_EState, Min_EState",unique,greedy_max_coverage,band1

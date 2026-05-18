@@ -1,0 +1,16 @@
+comparison,n_common,common_descriptors,analysis_type,desc_count,method
+band1 vs band2,4,"AtomInformationContent, BondInformationContent, Macrocycle_count, PMI_Ratio1",overlap,10,hierarchical_min_avg
+band1 vs band3,2,"Halogenated_Aromatics, PMI_Ratio1",overlap,10,hierarchical_min_avg
+band1 vs band4,3,"BondInformationContent, Macrocycle_count, PMI_Ratio1",overlap,10,hierarchical_min_avg
+band2 vs band3,5,"Amine, Lactone, Nitrile, PMI_Ratio1, Phenol",overlap,10,hierarchical_min_avg
+band2 vs band4,7,"Amine, BondInformationContent, Lactone, Macrocycle_count, Nitrile, PMI_Ratio1, partial_charge_min",overlap,10,hierarchical_min_avg
+band3 vs band4,4,"Amine, Lactone, Nitrile, PMI_Ratio1",overlap,10,hierarchical_min_avg
+band1 vs band2 vs band3,1,PMI_Ratio1,overlap,10,hierarchical_min_avg
+band1 vs band2 vs band4,3,"BondInformationContent, Macrocycle_count, PMI_Ratio1",overlap,10,hierarchical_min_avg
+band1 vs band3 vs band4,1,PMI_Ratio1,overlap,10,hierarchical_min_avg
+band2 vs band3 vs band4,4,"Amine, Lactone, Nitrile, PMI_Ratio1",overlap,10,hierarchical_min_avg
+band1 vs band2 vs band3 vs band4,1,PMI_Ratio1,overlap,10,hierarchical_min_avg
+band1,5,"Ester, Hydroxyl, Quaternary_Carbons, StereocenterCount, TripleBondCount",unique,10,hierarchical_min_avg
+band2,1,Halogen,unique,10,hierarchical_min_avg
+band3,4,"Carboxylic_Acid, Ketone, Lactam, Sulfonyl",unique,10,hierarchical_min_avg
+band4,3,"FractionCSP3, Fraction_aromatic_rings, PMI_Ratio2",unique,10,hierarchical_min_avg

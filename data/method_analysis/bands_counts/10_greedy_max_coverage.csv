@@ -1,0 +1,16 @@
+comparison,n_common,common_descriptors,analysis_type,desc_count,method
+band1 vs band2,5,"Avg_EState, BertzCTIndex, GraphDistanceDistributionEntropy, PMI2, PathComplexityIndex",overlap,10,greedy_max_coverage
+band1 vs band3,5,"Avg_EState, BertzCTIndex, GraphDistanceDistributionEntropy, PMI2, ShapeIndex",overlap,10,greedy_max_coverage
+band1 vs band4,3,"BertzCTIndex, HeteroatomCount, TPSA",overlap,10,greedy_max_coverage
+band2 vs band3,6,"Asphericity, Avg_EState, BertzCTIndex, Eccentricity, GraphDistanceDistributionEntropy, PMI2",overlap,10,greedy_max_coverage
+band2 vs band4,1,BertzCTIndex,overlap,10,greedy_max_coverage
+band3 vs band4,1,BertzCTIndex,overlap,10,greedy_max_coverage
+band1 vs band2 vs band3,4,"Avg_EState, BertzCTIndex, GraphDistanceDistributionEntropy, PMI2",overlap,10,greedy_max_coverage
+band1 vs band2 vs band4,1,BertzCTIndex,overlap,10,greedy_max_coverage
+band1 vs band3 vs band4,1,BertzCTIndex,overlap,10,greedy_max_coverage
+band2 vs band3 vs band4,1,BertzCTIndex,overlap,10,greedy_max_coverage
+band1 vs band2 vs band3 vs band4,1,BertzCTIndex,overlap,10,greedy_max_coverage
+band1,2,"Bridged_ring_count, Ether",unique,10,greedy_max_coverage
+band2,3,"AromaticRingCount, Carbonyl, SpherocityIndex",unique,10,greedy_max_coverage
+band3,3,"BridgeheadAtomCount, FractionCSP3, StereocenterCount",unique,10,greedy_max_coverage
+band4,7,"AtomInformationContent, BoundingBoxVolume, Chi0, Chi1, Chi2, Chi3, Chi4",unique,10,greedy_max_coverage

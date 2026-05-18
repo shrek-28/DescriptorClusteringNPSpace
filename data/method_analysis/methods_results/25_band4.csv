@@ -1,0 +1,8 @@
+comparison,n_common,common_descriptors,analysis_type,desc_count,band
+greedy_max_coverage vs hierarchical_max_avg,8,"Avg_EState, BertzCTIndex, Chi2, Chi4, CovalentRadiusSum, DoubleBondCount, HBA, Max_EState",overlap,25,band4
+greedy_max_coverage vs hierarchical_min_avg,4,"BoundingBoxVolume, Chi2, CovalentRadiusSum, DoubleBondCount",overlap,25,band4
+hierarchical_max_avg vs hierarchical_min_avg,17,"Amine, AromaticRingCount, BondInformationContent, Bridged_ring_count, Chi2, CovalentRadiusSum, DoubleBondCount, Eccentricity, Fraction_aromatic_rings, Fused_ring_count, Lactone, Largest_ring_size, PMI_Ratio1, PMI_Ratio2, RadiusOfGyration, TripleBondCount, partial_charge_min",overlap,25,band4
+greedy_max_coverage vs hierarchical_max_avg vs hierarchical_min_avg,3,"Chi2, CovalentRadiusSum, DoubleBondCount",overlap,25,band4
+greedy_max_coverage,16,"AtomInformationContent, BalabanIndex, Chi0, Chi1, Chi3, Ether, HeavyAtomCount, HeteroatomCount, LogP, Min_EState, RingCount, RotatableBonds, SSSR_count, StereocenterCount, TPSA, TopologicalDiameter",unique,25,band4
+hierarchical_max_avg,3,"Ester, Quaternary_Carbons, SpherocityIndex",unique,25,band4
+hierarchical_min_avg,7,"GraphDistanceDistributionEntropy, HBD, Hydroxyl, MolWt, MolarRefractivity, Spiro_atom_count, TotalAtomCount",unique,25,band4

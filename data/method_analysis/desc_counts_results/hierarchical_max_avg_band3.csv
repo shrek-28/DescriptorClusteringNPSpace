@@ -1,0 +1,16 @@
+comparison,n_common,common_descriptors,analysis_type,method,band
+10 vs 15,8,"Amine, BertzCTIndex, Carboxylic_Acid, Halogenated_Aromatics, Ketone, Lactam, PMI_Ratio2, Sulfonyl",overlap,hierarchical_max_avg,band3
+10 vs 20,9,"Amine, BertzCTIndex, Carboxylic_Acid, Halogenated_Aromatics, Ketone, Lactam, PMI_Ratio2, RingCount, Sulfonyl",overlap,hierarchical_max_avg,band3
+10 vs 25,9,"Amine, BertzCTIndex, Carboxylic_Acid, Halogenated_Aromatics, Ketone, Lactam, PMI_Ratio2, RingCount, Sulfonyl",overlap,hierarchical_max_avg,band3
+15 vs 20,14,"Alkyne, Amine, BertzCTIndex, Carboxylic_Acid, FractionCSP3, Halogenated_Aromatics, Ketone, Lactam, LogP, Macrocycle_count, Nitrile, PMI_Ratio2, Phenol, Sulfonyl",overlap,hierarchical_max_avg,band3
+15 vs 25,13,"Alkyne, Amine, BertzCTIndex, Carboxylic_Acid, FractionCSP3, Halogenated_Aromatics, Ketone, Lactam, LogP, Nitrile, PMI_Ratio2, Phenol, Sulfonyl",overlap,hierarchical_max_avg,band3
+20 vs 25,18,"Alkyne, Amine, Asphericity, BertzCTIndex, Carbonyl, Carboxylic_Acid, Chi2, FractionCSP3, Halogenated_Aromatics, Ketone, Lactam, LogP, Nitrile, PMI_Ratio2, Phenol, RingCount, Sulfonyl, ZagrebIndex",overlap,hierarchical_max_avg,band3
+10 vs 15 vs 20,8,"Amine, BertzCTIndex, Carboxylic_Acid, Halogenated_Aromatics, Ketone, Lactam, PMI_Ratio2, Sulfonyl",overlap,hierarchical_max_avg,band3
+10 vs 15 vs 25,8,"Amine, BertzCTIndex, Carboxylic_Acid, Halogenated_Aromatics, Ketone, Lactam, PMI_Ratio2, Sulfonyl",overlap,hierarchical_max_avg,band3
+10 vs 20 vs 25,9,"Amine, BertzCTIndex, Carboxylic_Acid, Halogenated_Aromatics, Ketone, Lactam, PMI_Ratio2, RingCount, Sulfonyl",overlap,hierarchical_max_avg,band3
+15 vs 20 vs 25,13,"Alkyne, Amine, BertzCTIndex, Carboxylic_Acid, FractionCSP3, Halogenated_Aromatics, Ketone, Lactam, LogP, Nitrile, PMI_Ratio2, Phenol, Sulfonyl",overlap,hierarchical_max_avg,band3
+10 vs 15 vs 20 vs 25,8,"Amine, BertzCTIndex, Carboxylic_Acid, Halogenated_Aromatics, Ketone, Lactam, PMI_Ratio2, Sulfonyl",overlap,hierarchical_max_avg,band3
+10,1,TripleBondCount,unique,hierarchical_max_avg,band3
+15,1,SSSR_count,unique,hierarchical_max_avg,band3
+20,1,Chi3,unique,hierarchical_max_avg,band3
+25,7,"BalabanIndex, BridgeheadAtomCount, GraphDistanceDistributionEntropy, Lactone, Largest_ring_size, WienerIndex, partial_charge_min",unique,hierarchical_max_avg,band3

@@ -1,0 +1,16 @@
+comparison,n_common,common_descriptors,analysis_type,desc_count,method
+band1 vs band2,13,"Asphericity, BalabanIndex, BertzCTIndex, Carbonyl, Chi2, FractionCSP3, Halogenated_Aromatics, LogP, Macrocycle_count, MolWt, PMI_Ratio2, TripleBondCount, WienerIndex",overlap,20,hierarchical_max_avg
+band1 vs band3,10,"Asphericity, BertzCTIndex, Carbonyl, Chi2, FractionCSP3, Halogenated_Aromatics, LogP, Macrocycle_count, PMI_Ratio2, ZagrebIndex",overlap,20,hierarchical_max_avg
+band1 vs band4,6,"BertzCTIndex, Chi4, PMI_Ratio1, PMI_Ratio2, Quaternary_Carbons, TripleBondCount",overlap,20,hierarchical_max_avg
+band2 vs band3,12,"Amine, Asphericity, BertzCTIndex, Carbonyl, Chi2, FractionCSP3, Halogenated_Aromatics, LogP, Macrocycle_count, Nitrile, PMI_Ratio2, Phenol",overlap,20,hierarchical_max_avg
+band2 vs band4,7,"Amine, BertzCTIndex, BridgeheadAtomCount, Lactone, PMI_Ratio2, TripleBondCount, partial_charge_min",overlap,20,hierarchical_max_avg
+band3 vs band4,3,"Amine, BertzCTIndex, PMI_Ratio2",overlap,20,hierarchical_max_avg
+band1 vs band2 vs band3,9,"Asphericity, BertzCTIndex, Carbonyl, Chi2, FractionCSP3, Halogenated_Aromatics, LogP, Macrocycle_count, PMI_Ratio2",overlap,20,hierarchical_max_avg
+band1 vs band2 vs band4,3,"BertzCTIndex, PMI_Ratio2, TripleBondCount",overlap,20,hierarchical_max_avg
+band1 vs band3 vs band4,2,"BertzCTIndex, PMI_Ratio2",overlap,20,hierarchical_max_avg
+band2 vs band3 vs band4,3,"Amine, BertzCTIndex, PMI_Ratio2",overlap,20,hierarchical_max_avg
+band1 vs band2 vs band3 vs band4,2,"BertzCTIndex, PMI_Ratio2",overlap,20,hierarchical_max_avg
+band1,3,"Fused_ring_count, MolarRefractivity, TPSA",unique,20,hierarchical_max_avg
+band2,1,SSSR_count,unique,20,hierarchical_max_avg
+band3,7,"Alkyne, Carboxylic_Acid, Chi3, Ketone, Lactam, RingCount, Sulfonyl",unique,20,hierarchical_max_avg
+band4,10,"AromaticRingCount, Avg_EState, BondInformationContent, CovalentRadiusSum, Ester, Fraction_aromatic_rings, HBA, Largest_ring_size, RadiusOfGyration, SpherocityIndex",unique,20,hierarchical_max_avg

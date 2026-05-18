@@ -1,0 +1,8 @@
+comparison,n_common,common_descriptors,analysis_type,desc_count,band
+greedy_max_coverage vs hierarchical_max_avg,6,"Asphericity, BertzCTIndex, BridgeheadAtomCount, FractionCSP3, GraphDistanceDistributionEntropy, Phenol",overlap,25,band3
+greedy_max_coverage vs hierarchical_min_avg,4,"Asphericity, BridgeheadAtomCount, GraphDistanceDistributionEntropy, Phenol",overlap,25,band3
+hierarchical_max_avg vs hierarchical_min_avg,18,"Alkyne, Amine, Asphericity, BalabanIndex, BridgeheadAtomCount, Carboxylic_Acid, GraphDistanceDistributionEntropy, Halogenated_Aromatics, Ketone, Lactam, Lactone, Largest_ring_size, Nitrile, Phenol, Sulfonyl, WienerIndex, ZagrebIndex, partial_charge_min",overlap,25,band3
+greedy_max_coverage vs hierarchical_max_avg vs hierarchical_min_avg,4,"Asphericity, BridgeheadAtomCount, GraphDistanceDistributionEntropy, Phenol",overlap,25,band3
+greedy_max_coverage,19,"AromaticRingCount, Avg_EState, Chi4, Eccentricity, HeteroatomCount, InertialShapeFactor, Max_EState, Min_EState, PMI2, PMI3, PathComplexityIndex, Quaternary_Carbons, ShapeIndex, SpherocityIndex, StereocenterCount, TPSA, TopologicalDiameter, TopologicalRadius, partial_charge_max",unique,25,band3
+hierarchical_max_avg,5,"Carbonyl, Chi2, LogP, PMI_Ratio2, RingCount",unique,25,band3
+hierarchical_min_avg,7,"AtomInformationContent, BondInformationContent, BoundingBoxVolume, HBD, MolarRefractivity, PMI_Ratio1, Spiro_atom_count",unique,25,band3

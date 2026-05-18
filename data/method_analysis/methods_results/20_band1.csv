@@ -1,0 +1,8 @@
+comparison,n_common,common_descriptors,analysis_type,desc_count,band
+greedy_max_coverage vs hierarchical_max_avg,7,"BertzCTIndex, Carbonyl, Chi4, FractionCSP3, PMI_Ratio2, Quaternary_Carbons, TPSA",overlap,20,band1
+greedy_max_coverage vs hierarchical_min_avg,4,"AtomInformationContent, PMI_Ratio2, Quaternary_Carbons, StereocenterCount",overlap,20,band1
+hierarchical_max_avg vs hierarchical_min_avg,12,"Asphericity, BalabanIndex, Halogenated_Aromatics, Macrocycle_count, MolWt, MolarRefractivity, PMI_Ratio1, PMI_Ratio2, Quaternary_Carbons, TripleBondCount, WienerIndex, ZagrebIndex",overlap,20,band1
+greedy_max_coverage vs hierarchical_max_avg vs hierarchical_min_avg,2,"PMI_Ratio2, Quaternary_Carbons",overlap,20,band1
+greedy_max_coverage,11,"Avg_EState, Ether, GraphDistanceDistributionEntropy, HBA, HeteroatomCount, InertialShapeFactor, PMI2, RingCount, SSSR_count, ShapeIndex, SpherocityIndex",unique,20,band1
+hierarchical_max_avg,3,"Chi2, Fused_ring_count, LogP",unique,20,band1
+hierarchical_min_avg,6,"BondInformationContent, BoundingBoxVolume, Bridged_ring_count, Chi0, Ester, Hydroxyl",unique,20,band1

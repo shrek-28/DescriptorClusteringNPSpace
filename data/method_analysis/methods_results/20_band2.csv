@@ -1,0 +1,8 @@
+comparison,n_common,common_descriptors,analysis_type,desc_count,band
+greedy_max_coverage vs hierarchical_max_avg,4,"Asphericity, BertzCTIndex, BridgeheadAtomCount, Carbonyl",overlap,20,band2
+greedy_max_coverage vs hierarchical_min_avg,2,"Asphericity, BridgeheadAtomCount",overlap,20,band2
+hierarchical_max_avg vs hierarchical_min_avg,13,"Amine, Asphericity, BalabanIndex, BridgeheadAtomCount, Halogenated_Aromatics, Lactone, Macrocycle_count, MolWt, Nitrile, Phenol, TripleBondCount, WienerIndex, partial_charge_min",overlap,20,band2
+greedy_max_coverage vs hierarchical_max_avg vs hierarchical_min_avg,2,"Asphericity, BridgeheadAtomCount",overlap,20,band2
+greedy_max_coverage,16,"AromaticRingCount, Avg_EState, Eccentricity, GraphDistanceDistributionEntropy, HBA, HeteroatomCount, InertialShapeFactor, Largest_ring_size, Max_EState, PMI2, PathComplexityIndex, RadiusOfGyration, ShapeIndex, SpherocityIndex, TPSA, TopologicalDiameter",unique,20,band2
+hierarchical_max_avg,5,"Chi2, FractionCSP3, LogP, PMI_Ratio2, SSSR_count",unique,20,band2
+hierarchical_min_avg,7,"AtomInformationContent, BondInformationContent, BoundingBoxVolume, Ester, HBD, PMI_Ratio1, Spiro_atom_count",unique,20,band2

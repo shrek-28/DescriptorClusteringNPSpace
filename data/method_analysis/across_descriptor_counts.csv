@@ -1,0 +1,181 @@
+comparison,n_common,common_descriptors,analysis_type,method,band
+10 vs 15,10,"BertzCTIndex, Carbonyl, FractionCSP3, Fused_ring_count, Halogenated_Aromatics, LogP, Macrocycle_count, PMI_Ratio2, TPSA, TripleBondCount",overlap,hierarchical_max_avg,band1
+10 vs 20,10,"BertzCTIndex, Carbonyl, FractionCSP3, Fused_ring_count, Halogenated_Aromatics, LogP, Macrocycle_count, PMI_Ratio2, TPSA, TripleBondCount",overlap,hierarchical_max_avg,band1
+10 vs 25,6,"BertzCTIndex, Halogenated_Aromatics, LogP, PMI_Ratio2, TPSA, TripleBondCount",overlap,hierarchical_max_avg,band1
+15 vs 20,14,"BertzCTIndex, Carbonyl, Chi4, FractionCSP3, Fused_ring_count, Halogenated_Aromatics, LogP, Macrocycle_count, MolWt, MolarRefractivity, PMI_Ratio2, TPSA, TripleBondCount, WienerIndex",overlap,hierarchical_max_avg,band1
+15 vs 25,10,"BertzCTIndex, Chi4, Halogenated_Aromatics, LogP, MolWt, MolarRefractivity, PMI_Ratio2, TPSA, TripleBondCount, WienerIndex",overlap,hierarchical_max_avg,band1
+20 vs 25,13,"Asphericity, BalabanIndex, BertzCTIndex, Chi4, Halogenated_Aromatics, LogP, MolWt, MolarRefractivity, PMI_Ratio1, PMI_Ratio2, TPSA, TripleBondCount, WienerIndex",overlap,hierarchical_max_avg,band1
+10 vs 15 vs 20,10,"BertzCTIndex, Carbonyl, FractionCSP3, Fused_ring_count, Halogenated_Aromatics, LogP, Macrocycle_count, PMI_Ratio2, TPSA, TripleBondCount",overlap,hierarchical_max_avg,band1
+10 vs 15 vs 25,6,"BertzCTIndex, Halogenated_Aromatics, LogP, PMI_Ratio2, TPSA, TripleBondCount",overlap,hierarchical_max_avg,band1
+10 vs 20 vs 25,6,"BertzCTIndex, Halogenated_Aromatics, LogP, PMI_Ratio2, TPSA, TripleBondCount",overlap,hierarchical_max_avg,band1
+15 vs 20 vs 25,10,"BertzCTIndex, Chi4, Halogenated_Aromatics, LogP, MolWt, MolarRefractivity, PMI_Ratio2, TPSA, TripleBondCount, WienerIndex",overlap,hierarchical_max_avg,band1
+10 vs 15 vs 20 vs 25,6,"BertzCTIndex, Halogenated_Aromatics, LogP, PMI_Ratio2, TPSA, TripleBondCount",overlap,hierarchical_max_avg,band1
+10,0,,unique,hierarchical_max_avg,band1
+15,1,RotatableBonds,unique,hierarchical_max_avg,band1
+20,3,"Chi2, Quaternary_Carbons, ZagrebIndex",unique,hierarchical_max_avg,band1
+25,12,"BondInformationContent, BoundingBoxVolume, DoubleBondCount, Fraction_aromatic_rings, Hydroxyl, Largest_ring_size, PMI2, PathComplexityIndex, RingCount, SSSR_count, TotalPathCount, partial_charge_max",unique,hierarchical_max_avg,band1
+10 vs 15,9,"Amine, BertzCTIndex, FractionCSP3, Halogen, Lactone, LogP, PMI_Ratio2, Phenol, TripleBondCount",overlap,hierarchical_max_avg,band2
+10 vs 20,8,"Amine, BertzCTIndex, FractionCSP3, Lactone, LogP, PMI_Ratio2, Phenol, TripleBondCount",overlap,hierarchical_max_avg,band2
+10 vs 25,7,"Amine, BertzCTIndex, Lactone, LogP, PMI_Ratio2, Phenol, TripleBondCount",overlap,hierarchical_max_avg,band2
+15 vs 20,14,"Amine, BalabanIndex, BertzCTIndex, Carbonyl, FractionCSP3, Lactone, LogP, Macrocycle_count, MolWt, Nitrile, PMI_Ratio2, Phenol, SSSR_count, TripleBondCount",overlap,hierarchical_max_avg,band2
+15 vs 25,13,"Amine, BalabanIndex, BertzCTIndex, Carbonyl, Lactone, LogP, Macrocycle_count, MolWt, Nitrile, PMI_Ratio2, Phenol, SSSR_count, TripleBondCount",overlap,hierarchical_max_avg,band2
+20 vs 25,19,"Amine, Asphericity, BalabanIndex, BertzCTIndex, BridgeheadAtomCount, Carbonyl, Chi2, Halogenated_Aromatics, Lactone, LogP, Macrocycle_count, MolWt, Nitrile, PMI_Ratio2, Phenol, SSSR_count, TripleBondCount, WienerIndex, partial_charge_min",overlap,hierarchical_max_avg,band2
+10 vs 15 vs 20,8,"Amine, BertzCTIndex, FractionCSP3, Lactone, LogP, PMI_Ratio2, Phenol, TripleBondCount",overlap,hierarchical_max_avg,band2
+10 vs 15 vs 25,7,"Amine, BertzCTIndex, Lactone, LogP, PMI_Ratio2, Phenol, TripleBondCount",overlap,hierarchical_max_avg,band2
+10 vs 20 vs 25,7,"Amine, BertzCTIndex, Lactone, LogP, PMI_Ratio2, Phenol, TripleBondCount",overlap,hierarchical_max_avg,band2
+15 vs 20 vs 25,13,"Amine, BalabanIndex, BertzCTIndex, Carbonyl, Lactone, LogP, Macrocycle_count, MolWt, Nitrile, PMI_Ratio2, Phenol, SSSR_count, TripleBondCount",overlap,hierarchical_max_avg,band2
+10 vs 15 vs 20 vs 25,7,"Amine, BertzCTIndex, Lactone, LogP, PMI_Ratio2, Phenol, TripleBondCount",overlap,hierarchical_max_avg,band2
+10,1,Fused_ring_count,unique,hierarchical_max_avg,band2
+15,0,,unique,hierarchical_max_avg,band2
+20,0,,unique,hierarchical_max_avg,band2
+25,6,"AromaticRingCount, Fraction_aromatic_rings, MolarRefractivity, PMI_Ratio1, TPSA, ZagrebIndex",unique,hierarchical_max_avg,band2
+10 vs 15,8,"Amine, BertzCTIndex, Carboxylic_Acid, Halogenated_Aromatics, Ketone, Lactam, PMI_Ratio2, Sulfonyl",overlap,hierarchical_max_avg,band3
+10 vs 20,9,"Amine, BertzCTIndex, Carboxylic_Acid, Halogenated_Aromatics, Ketone, Lactam, PMI_Ratio2, RingCount, Sulfonyl",overlap,hierarchical_max_avg,band3
+10 vs 25,9,"Amine, BertzCTIndex, Carboxylic_Acid, Halogenated_Aromatics, Ketone, Lactam, PMI_Ratio2, RingCount, Sulfonyl",overlap,hierarchical_max_avg,band3
+15 vs 20,14,"Alkyne, Amine, BertzCTIndex, Carboxylic_Acid, FractionCSP3, Halogenated_Aromatics, Ketone, Lactam, LogP, Macrocycle_count, Nitrile, PMI_Ratio2, Phenol, Sulfonyl",overlap,hierarchical_max_avg,band3
+15 vs 25,13,"Alkyne, Amine, BertzCTIndex, Carboxylic_Acid, FractionCSP3, Halogenated_Aromatics, Ketone, Lactam, LogP, Nitrile, PMI_Ratio2, Phenol, Sulfonyl",overlap,hierarchical_max_avg,band3
+20 vs 25,18,"Alkyne, Amine, Asphericity, BertzCTIndex, Carbonyl, Carboxylic_Acid, Chi2, FractionCSP3, Halogenated_Aromatics, Ketone, Lactam, LogP, Nitrile, PMI_Ratio2, Phenol, RingCount, Sulfonyl, ZagrebIndex",overlap,hierarchical_max_avg,band3
+10 vs 15 vs 20,8,"Amine, BertzCTIndex, Carboxylic_Acid, Halogenated_Aromatics, Ketone, Lactam, PMI_Ratio2, Sulfonyl",overlap,hierarchical_max_avg,band3
+10 vs 15 vs 25,8,"Amine, BertzCTIndex, Carboxylic_Acid, Halogenated_Aromatics, Ketone, Lactam, PMI_Ratio2, Sulfonyl",overlap,hierarchical_max_avg,band3
+10 vs 20 vs 25,9,"Amine, BertzCTIndex, Carboxylic_Acid, Halogenated_Aromatics, Ketone, Lactam, PMI_Ratio2, RingCount, Sulfonyl",overlap,hierarchical_max_avg,band3
+15 vs 20 vs 25,13,"Alkyne, Amine, BertzCTIndex, Carboxylic_Acid, FractionCSP3, Halogenated_Aromatics, Ketone, Lactam, LogP, Nitrile, PMI_Ratio2, Phenol, Sulfonyl",overlap,hierarchical_max_avg,band3
+10 vs 15 vs 20 vs 25,8,"Amine, BertzCTIndex, Carboxylic_Acid, Halogenated_Aromatics, Ketone, Lactam, PMI_Ratio2, Sulfonyl",overlap,hierarchical_max_avg,band3
+10,1,TripleBondCount,unique,hierarchical_max_avg,band3
+15,1,SSSR_count,unique,hierarchical_max_avg,band3
+20,1,Chi3,unique,hierarchical_max_avg,band3
+25,7,"BalabanIndex, BridgeheadAtomCount, GraphDistanceDistributionEntropy, Lactone, Largest_ring_size, WienerIndex, partial_charge_min",unique,hierarchical_max_avg,band3
+10 vs 15,6,"Amine, BondInformationContent, Lactone, PMI_Ratio2, Phenol, SpherocityIndex",overlap,hierarchical_max_avg,band4
+10 vs 20,5,"Amine, BondInformationContent, Lactone, PMI_Ratio2, SpherocityIndex",overlap,hierarchical_max_avg,band4
+10 vs 25,6,"Amine, BondInformationContent, Fused_ring_count, Lactone, PMI_Ratio2, SpherocityIndex",overlap,hierarchical_max_avg,band4
+15 vs 20,14,"Amine, Avg_EState, BondInformationContent, Chi4, CovalentRadiusSum, Ester, HBA, Lactone, Largest_ring_size, PMI_Ratio2, Quaternary_Carbons, SpherocityIndex, TripleBondCount, partial_charge_min",overlap,hierarchical_max_avg,band4
+15 vs 25,14,"Amine, Avg_EState, BondInformationContent, Chi4, CovalentRadiusSum, Ester, HBA, Lactone, Largest_ring_size, PMI_Ratio2, Quaternary_Carbons, SpherocityIndex, TripleBondCount, partial_charge_min",overlap,hierarchical_max_avg,band4
+20 vs 25,19,"Amine, AromaticRingCount, Avg_EState, BertzCTIndex, BondInformationContent, Chi4, CovalentRadiusSum, Ester, Fraction_aromatic_rings, HBA, Lactone, Largest_ring_size, PMI_Ratio1, PMI_Ratio2, Quaternary_Carbons, RadiusOfGyration, SpherocityIndex, TripleBondCount, partial_charge_min",overlap,hierarchical_max_avg,band4
+10 vs 15 vs 20,5,"Amine, BondInformationContent, Lactone, PMI_Ratio2, SpherocityIndex",overlap,hierarchical_max_avg,band4
+10 vs 15 vs 25,5,"Amine, BondInformationContent, Lactone, PMI_Ratio2, SpherocityIndex",overlap,hierarchical_max_avg,band4
+10 vs 20 vs 25,5,"Amine, BondInformationContent, Lactone, PMI_Ratio2, SpherocityIndex",overlap,hierarchical_max_avg,band4
+15 vs 20 vs 25,14,"Amine, Avg_EState, BondInformationContent, Chi4, CovalentRadiusSum, Ester, HBA, Lactone, Largest_ring_size, PMI_Ratio2, Quaternary_Carbons, SpherocityIndex, TripleBondCount, partial_charge_min",overlap,hierarchical_max_avg,band4
+10 vs 15 vs 20 vs 25,5,"Amine, BondInformationContent, Lactone, PMI_Ratio2, SpherocityIndex",overlap,hierarchical_max_avg,band4
+10,3,"FractionCSP3, HeteroatomCount, Nitrile",unique,hierarchical_max_avg,band4
+15,0,,unique,hierarchical_max_avg,band4
+20,1,BridgeheadAtomCount,unique,hierarchical_max_avg,band4
+25,5,"Bridged_ring_count, Chi2, DoubleBondCount, Eccentricity, Max_EState",unique,hierarchical_max_avg,band4
+10 vs 15,10,"AtomInformationContent, BondInformationContent, Ester, Halogenated_Aromatics, Hydroxyl, Macrocycle_count, PMI_Ratio1, Quaternary_Carbons, StereocenterCount, TripleBondCount",overlap,hierarchical_min_avg,band1
+10 vs 20,10,"AtomInformationContent, BondInformationContent, Ester, Halogenated_Aromatics, Hydroxyl, Macrocycle_count, PMI_Ratio1, Quaternary_Carbons, StereocenterCount, TripleBondCount",overlap,hierarchical_min_avg,band1
+10 vs 25,7,"AtomInformationContent, BondInformationContent, Halogenated_Aromatics, Hydroxyl, PMI_Ratio1, StereocenterCount, TripleBondCount",overlap,hierarchical_min_avg,band1
+15 vs 20,15,"AtomInformationContent, BondInformationContent, BoundingBoxVolume, Chi0, Ester, Halogenated_Aromatics, Hydroxyl, Macrocycle_count, MolWt, MolarRefractivity, PMI_Ratio1, Quaternary_Carbons, StereocenterCount, TripleBondCount, WienerIndex",overlap,hierarchical_min_avg,band1
+15 vs 25,12,"AtomInformationContent, BondInformationContent, BoundingBoxVolume, Chi0, Halogenated_Aromatics, Hydroxyl, MolWt, MolarRefractivity, PMI_Ratio1, StereocenterCount, TripleBondCount, WienerIndex",overlap,hierarchical_min_avg,band1
+20 vs 25,15,"Asphericity, AtomInformationContent, BalabanIndex, BondInformationContent, BoundingBoxVolume, Chi0, Halogenated_Aromatics, Hydroxyl, MolWt, MolarRefractivity, PMI_Ratio1, PMI_Ratio2, StereocenterCount, TripleBondCount, WienerIndex",overlap,hierarchical_min_avg,band1
+10 vs 15 vs 20,10,"AtomInformationContent, BondInformationContent, Ester, Halogenated_Aromatics, Hydroxyl, Macrocycle_count, PMI_Ratio1, Quaternary_Carbons, StereocenterCount, TripleBondCount",overlap,hierarchical_min_avg,band1
+10 vs 15 vs 25,7,"AtomInformationContent, BondInformationContent, Halogenated_Aromatics, Hydroxyl, PMI_Ratio1, StereocenterCount, TripleBondCount",overlap,hierarchical_min_avg,band1
+10 vs 20 vs 25,7,"AtomInformationContent, BondInformationContent, Halogenated_Aromatics, Hydroxyl, PMI_Ratio1, StereocenterCount, TripleBondCount",overlap,hierarchical_min_avg,band1
+15 vs 20 vs 25,12,"AtomInformationContent, BondInformationContent, BoundingBoxVolume, Chi0, Halogenated_Aromatics, Hydroxyl, MolWt, MolarRefractivity, PMI_Ratio1, StereocenterCount, TripleBondCount, WienerIndex",overlap,hierarchical_min_avg,band1
+10 vs 15 vs 20 vs 25,7,"AtomInformationContent, BondInformationContent, Halogenated_Aromatics, Hydroxyl, PMI_Ratio1, StereocenterCount, TripleBondCount",overlap,hierarchical_min_avg,band1
+10,0,,unique,hierarchical_min_avg,band1
+15,0,,unique,hierarchical_min_avg,band1
+20,2,"Bridged_ring_count, ZagrebIndex",unique,hierarchical_min_avg,band1
+25,10,"DoubleBondCount, Fraction_aromatic_rings, HBD, Largest_ring_size, PMI2, PathComplexityIndex, RadiusOfGyration, RingCount, SSSR_count, partial_charge_max",unique,hierarchical_min_avg,band1
+10 vs 15,10,"Amine, AtomInformationContent, BondInformationContent, Halogen, Lactone, Macrocycle_count, Nitrile, PMI_Ratio1, Phenol, partial_charge_min",overlap,hierarchical_min_avg,band2
+10 vs 20,9,"Amine, AtomInformationContent, BondInformationContent, Lactone, Macrocycle_count, Nitrile, PMI_Ratio1, Phenol, partial_charge_min",overlap,hierarchical_min_avg,band2
+10 vs 25,8,"Amine, AtomInformationContent, Lactone, Macrocycle_count, Nitrile, PMI_Ratio1, Phenol, partial_charge_min",overlap,hierarchical_min_avg,band2
+15 vs 20,14,"Amine, AtomInformationContent, BalabanIndex, BondInformationContent, BridgeheadAtomCount, HBD, Lactone, Macrocycle_count, MolWt, Nitrile, PMI_Ratio1, Phenol, TripleBondCount, partial_charge_min",overlap,hierarchical_min_avg,band2
+15 vs 25,13,"Amine, AtomInformationContent, BalabanIndex, BridgeheadAtomCount, HBD, Lactone, Macrocycle_count, MolWt, Nitrile, PMI_Ratio1, Phenol, TripleBondCount, partial_charge_min",overlap,hierarchical_min_avg,band2
+20 vs 25,19,"Amine, Asphericity, AtomInformationContent, BalabanIndex, BoundingBoxVolume, BridgeheadAtomCount, Ester, HBD, Halogenated_Aromatics, Lactone, Macrocycle_count, MolWt, Nitrile, PMI_Ratio1, Phenol, Spiro_atom_count, TripleBondCount, WienerIndex, partial_charge_min",overlap,hierarchical_min_avg,band2
+10 vs 15 vs 20,9,"Amine, AtomInformationContent, BondInformationContent, Lactone, Macrocycle_count, Nitrile, PMI_Ratio1, Phenol, partial_charge_min",overlap,hierarchical_min_avg,band2
+10 vs 15 vs 25,8,"Amine, AtomInformationContent, Lactone, Macrocycle_count, Nitrile, PMI_Ratio1, Phenol, partial_charge_min",overlap,hierarchical_min_avg,band2
+10 vs 20 vs 25,8,"Amine, AtomInformationContent, Lactone, Macrocycle_count, Nitrile, PMI_Ratio1, Phenol, partial_charge_min",overlap,hierarchical_min_avg,band2
+15 vs 20 vs 25,13,"Amine, AtomInformationContent, BalabanIndex, BridgeheadAtomCount, HBD, Lactone, Macrocycle_count, MolWt, Nitrile, PMI_Ratio1, Phenol, TripleBondCount, partial_charge_min",overlap,hierarchical_min_avg,band2
+10 vs 15 vs 20 vs 25,8,"Amine, AtomInformationContent, Lactone, Macrocycle_count, Nitrile, PMI_Ratio1, Phenol, partial_charge_min",overlap,hierarchical_min_avg,band2
+10,0,,unique,hierarchical_min_avg,band2
+15,0,,unique,hierarchical_min_avg,band2
+20,0,,unique,hierarchical_min_avg,band2
+25,6,"AromaticRingCount, Fraction_aromatic_rings, MolarRefractivity, PMI_Ratio2, StereocenterCount, ZagrebIndex",unique,hierarchical_min_avg,band2
+10 vs 15,10,"Amine, Carboxylic_Acid, Halogenated_Aromatics, Ketone, Lactam, Lactone, Nitrile, PMI_Ratio1, Phenol, Sulfonyl",overlap,hierarchical_min_avg,band3
+10 vs 20,10,"Amine, Carboxylic_Acid, Halogenated_Aromatics, Ketone, Lactam, Lactone, Nitrile, PMI_Ratio1, Phenol, Sulfonyl",overlap,hierarchical_min_avg,band3
+10 vs 25,10,"Amine, Carboxylic_Acid, Halogenated_Aromatics, Ketone, Lactam, Lactone, Nitrile, PMI_Ratio1, Phenol, Sulfonyl",overlap,hierarchical_min_avg,band3
+15 vs 20,15,"Alkyne, Amine, AtomInformationContent, BondInformationContent, BridgeheadAtomCount, Carboxylic_Acid, Halogenated_Aromatics, Ketone, Lactam, Lactone, MolarRefractivity, Nitrile, PMI_Ratio1, Phenol, Sulfonyl",overlap,hierarchical_min_avg,band3
+15 vs 25,15,"Alkyne, Amine, AtomInformationContent, BondInformationContent, BridgeheadAtomCount, Carboxylic_Acid, Halogenated_Aromatics, Ketone, Lactam, Lactone, MolarRefractivity, Nitrile, PMI_Ratio1, Phenol, Sulfonyl",overlap,hierarchical_min_avg,band3
+20 vs 25,19,"Alkyne, Amine, Asphericity, AtomInformationContent, BalabanIndex, BondInformationContent, BoundingBoxVolume, BridgeheadAtomCount, Carboxylic_Acid, GraphDistanceDistributionEntropy, Halogenated_Aromatics, Ketone, Lactam, Lactone, MolarRefractivity, Nitrile, PMI_Ratio1, Phenol, Sulfonyl",overlap,hierarchical_min_avg,band3
+10 vs 15 vs 20,10,"Amine, Carboxylic_Acid, Halogenated_Aromatics, Ketone, Lactam, Lactone, Nitrile, PMI_Ratio1, Phenol, Sulfonyl",overlap,hierarchical_min_avg,band3
+10 vs 15 vs 25,10,"Amine, Carboxylic_Acid, Halogenated_Aromatics, Ketone, Lactam, Lactone, Nitrile, PMI_Ratio1, Phenol, Sulfonyl",overlap,hierarchical_min_avg,band3
+10 vs 20 vs 25,10,"Amine, Carboxylic_Acid, Halogenated_Aromatics, Ketone, Lactam, Lactone, Nitrile, PMI_Ratio1, Phenol, Sulfonyl",overlap,hierarchical_min_avg,band3
+15 vs 20 vs 25,15,"Alkyne, Amine, AtomInformationContent, BondInformationContent, BridgeheadAtomCount, Carboxylic_Acid, Halogenated_Aromatics, Ketone, Lactam, Lactone, MolarRefractivity, Nitrile, PMI_Ratio1, Phenol, Sulfonyl",overlap,hierarchical_min_avg,band3
+10 vs 15 vs 20 vs 25,10,"Amine, Carboxylic_Acid, Halogenated_Aromatics, Ketone, Lactam, Lactone, Nitrile, PMI_Ratio1, Phenol, Sulfonyl",overlap,hierarchical_min_avg,band3
+10,0,,unique,hierarchical_min_avg,band3
+15,0,,unique,hierarchical_min_avg,band3
+20,1,Chi3,unique,hierarchical_min_avg,band3
+25,6,"HBD, Largest_ring_size, Spiro_atom_count, WienerIndex, ZagrebIndex, partial_charge_min",unique,hierarchical_min_avg,band3
+10 vs 15,7,"Amine, BondInformationContent, Fraction_aromatic_rings, Lactone, PMI_Ratio1, PMI_Ratio2, partial_charge_min",overlap,hierarchical_min_avg,band4
+10 vs 20,7,"Amine, BondInformationContent, Fraction_aromatic_rings, Lactone, PMI_Ratio1, PMI_Ratio2, partial_charge_min",overlap,hierarchical_min_avg,band4
+10 vs 25,7,"Amine, BondInformationContent, Fraction_aromatic_rings, Lactone, PMI_Ratio1, PMI_Ratio2, partial_charge_min",overlap,hierarchical_min_avg,band4
+15 vs 20,15,"Amine, BondInformationContent, BoundingBoxVolume, BridgeheadAtomCount, CovalentRadiusSum, Fraction_aromatic_rings, HBD, Hydroxyl, Lactone, Largest_ring_size, MolWt, PMI_Ratio1, PMI_Ratio2, TripleBondCount, partial_charge_min",overlap,hierarchical_min_avg,band4
+15 vs 25,14,"Amine, BondInformationContent, BoundingBoxVolume, CovalentRadiusSum, Fraction_aromatic_rings, HBD, Hydroxyl, Lactone, Largest_ring_size, MolWt, PMI_Ratio1, PMI_Ratio2, TripleBondCount, partial_charge_min",overlap,hierarchical_min_avg,band4
+20 vs 25,18,"Amine, AromaticRingCount, BondInformationContent, BoundingBoxVolume, CovalentRadiusSum, DoubleBondCount, Eccentricity, Fraction_aromatic_rings, HBD, Hydroxyl, Lactone, Largest_ring_size, MolWt, PMI_Ratio1, PMI_Ratio2, RadiusOfGyration, TripleBondCount, partial_charge_min",overlap,hierarchical_min_avg,band4
+10 vs 15 vs 20,7,"Amine, BondInformationContent, Fraction_aromatic_rings, Lactone, PMI_Ratio1, PMI_Ratio2, partial_charge_min",overlap,hierarchical_min_avg,band4
+10 vs 15 vs 25,7,"Amine, BondInformationContent, Fraction_aromatic_rings, Lactone, PMI_Ratio1, PMI_Ratio2, partial_charge_min",overlap,hierarchical_min_avg,band4
+10 vs 20 vs 25,7,"Amine, BondInformationContent, Fraction_aromatic_rings, Lactone, PMI_Ratio1, PMI_Ratio2, partial_charge_min",overlap,hierarchical_min_avg,band4
+15 vs 20 vs 25,14,"Amine, BondInformationContent, BoundingBoxVolume, CovalentRadiusSum, Fraction_aromatic_rings, HBD, Hydroxyl, Lactone, Largest_ring_size, MolWt, PMI_Ratio1, PMI_Ratio2, TripleBondCount, partial_charge_min",overlap,hierarchical_min_avg,band4
+10 vs 15 vs 20 vs 25,7,"Amine, BondInformationContent, Fraction_aromatic_rings, Lactone, PMI_Ratio1, PMI_Ratio2, partial_charge_min",overlap,hierarchical_min_avg,band4
+10,3,"FractionCSP3, Macrocycle_count, Nitrile",unique,hierarchical_min_avg,band4
+15,0,,unique,hierarchical_min_avg,band4
+20,1,BalabanIndex,unique,hierarchical_min_avg,band4
+25,7,"Bridged_ring_count, Chi2, Fused_ring_count, GraphDistanceDistributionEntropy, MolarRefractivity, Spiro_atom_count, TotalAtomCount",unique,hierarchical_min_avg,band4
+10 vs 15,10,"Avg_EState, BertzCTIndex, Bridged_ring_count, Ether, GraphDistanceDistributionEntropy, HeteroatomCount, PMI2, PathComplexityIndex, ShapeIndex, TPSA",overlap,greedy_max_coverage,band1
+10 vs 20,8,"Avg_EState, BertzCTIndex, Ether, GraphDistanceDistributionEntropy, HeteroatomCount, PMI2, ShapeIndex, TPSA",overlap,greedy_max_coverage,band1
+10 vs 25,7,"Avg_EState, BertzCTIndex, Ether, GraphDistanceDistributionEntropy, HeteroatomCount, PMI2, ShapeIndex",overlap,greedy_max_coverage,band1
+15 vs 20,13,"AtomInformationContent, Avg_EState, BertzCTIndex, Carbonyl, Ether, GraphDistanceDistributionEntropy, HBA, HeteroatomCount, InertialShapeFactor, PMI2, Quaternary_Carbons, ShapeIndex, TPSA",overlap,greedy_max_coverage,band1
+15 vs 25,12,"AtomInformationContent, Avg_EState, BertzCTIndex, Carbonyl, Ether, GraphDistanceDistributionEntropy, HBA, HeteroatomCount, InertialShapeFactor, PMI2, Quaternary_Carbons, ShapeIndex",overlap,greedy_max_coverage,band1
+20 vs 25,18,"AtomInformationContent, Avg_EState, BertzCTIndex, Carbonyl, Chi4, Ether, GraphDistanceDistributionEntropy, HBA, HeteroatomCount, InertialShapeFactor, PMI2, PMI_Ratio2, Quaternary_Carbons, RingCount, SSSR_count, ShapeIndex, SpherocityIndex, StereocenterCount",overlap,greedy_max_coverage,band1
+10 vs 15 vs 20,8,"Avg_EState, BertzCTIndex, Ether, GraphDistanceDistributionEntropy, HeteroatomCount, PMI2, ShapeIndex, TPSA",overlap,greedy_max_coverage,band1
+10 vs 15 vs 25,7,"Avg_EState, BertzCTIndex, Ether, GraphDistanceDistributionEntropy, HeteroatomCount, PMI2, ShapeIndex",overlap,greedy_max_coverage,band1
+10 vs 20 vs 25,7,"Avg_EState, BertzCTIndex, Ether, GraphDistanceDistributionEntropy, HeteroatomCount, PMI2, ShapeIndex",overlap,greedy_max_coverage,band1
+15 vs 20 vs 25,12,"AtomInformationContent, Avg_EState, BertzCTIndex, Carbonyl, Ether, GraphDistanceDistributionEntropy, HBA, HeteroatomCount, InertialShapeFactor, PMI2, Quaternary_Carbons, ShapeIndex",overlap,greedy_max_coverage,band1
+10 vs 15 vs 20 vs 25,7,"Avg_EState, BertzCTIndex, Ether, GraphDistanceDistributionEntropy, HeteroatomCount, PMI2, ShapeIndex",overlap,greedy_max_coverage,band1
+10,0,,unique,greedy_max_coverage,band1
+15,0,,unique,greedy_max_coverage,band1
+20,1,FractionCSP3,unique,greedy_max_coverage,band1
+25,7,"Alkyne, AromaticRingCount, Fraction_aromatic_rings, HBD, LogP, Max_EState, Min_EState",unique,greedy_max_coverage,band1
+10 vs 15,10,"AromaticRingCount, Asphericity, Avg_EState, BertzCTIndex, Carbonyl, Eccentricity, GraphDistanceDistributionEntropy, PMI2, PathComplexityIndex, SpherocityIndex",overlap,greedy_max_coverage,band2
+10 vs 20,10,"AromaticRingCount, Asphericity, Avg_EState, BertzCTIndex, Carbonyl, Eccentricity, GraphDistanceDistributionEntropy, PMI2, PathComplexityIndex, SpherocityIndex",overlap,greedy_max_coverage,band2
+10 vs 25,10,"AromaticRingCount, Asphericity, Avg_EState, BertzCTIndex, Carbonyl, Eccentricity, GraphDistanceDistributionEntropy, PMI2, PathComplexityIndex, SpherocityIndex",overlap,greedy_max_coverage,band2
+15 vs 20,15,"AromaticRingCount, Asphericity, Avg_EState, BertzCTIndex, BridgeheadAtomCount, Carbonyl, Eccentricity, GraphDistanceDistributionEntropy, HeteroatomCount, Largest_ring_size, PMI2, PathComplexityIndex, SpherocityIndex, TPSA, TopologicalDiameter",overlap,greedy_max_coverage,band2
+15 vs 25,15,"AromaticRingCount, Asphericity, Avg_EState, BertzCTIndex, BridgeheadAtomCount, Carbonyl, Eccentricity, GraphDistanceDistributionEntropy, HeteroatomCount, Largest_ring_size, PMI2, PathComplexityIndex, SpherocityIndex, TPSA, TopologicalDiameter",overlap,greedy_max_coverage,band2
+20 vs 25,20,"AromaticRingCount, Asphericity, Avg_EState, BertzCTIndex, BridgeheadAtomCount, Carbonyl, Eccentricity, GraphDistanceDistributionEntropy, HBA, HeteroatomCount, InertialShapeFactor, Largest_ring_size, Max_EState, PMI2, PathComplexityIndex, RadiusOfGyration, ShapeIndex, SpherocityIndex, TPSA, TopologicalDiameter",overlap,greedy_max_coverage,band2
+10 vs 15 vs 20,10,"AromaticRingCount, Asphericity, Avg_EState, BertzCTIndex, Carbonyl, Eccentricity, GraphDistanceDistributionEntropy, PMI2, PathComplexityIndex, SpherocityIndex",overlap,greedy_max_coverage,band2
+10 vs 15 vs 25,10,"AromaticRingCount, Asphericity, Avg_EState, BertzCTIndex, Carbonyl, Eccentricity, GraphDistanceDistributionEntropy, PMI2, PathComplexityIndex, SpherocityIndex",overlap,greedy_max_coverage,band2
+10 vs 20 vs 25,10,"AromaticRingCount, Asphericity, Avg_EState, BertzCTIndex, Carbonyl, Eccentricity, GraphDistanceDistributionEntropy, PMI2, PathComplexityIndex, SpherocityIndex",overlap,greedy_max_coverage,band2
+15 vs 20 vs 25,15,"AromaticRingCount, Asphericity, Avg_EState, BertzCTIndex, BridgeheadAtomCount, Carbonyl, Eccentricity, GraphDistanceDistributionEntropy, HeteroatomCount, Largest_ring_size, PMI2, PathComplexityIndex, SpherocityIndex, TPSA, TopologicalDiameter",overlap,greedy_max_coverage,band2
+10 vs 15 vs 20 vs 25,10,"AromaticRingCount, Asphericity, Avg_EState, BertzCTIndex, Carbonyl, Eccentricity, GraphDistanceDistributionEntropy, PMI2, PathComplexityIndex, SpherocityIndex",overlap,greedy_max_coverage,band2
+10,0,,unique,greedy_max_coverage,band2
+15,0,,unique,greedy_max_coverage,band2
+20,0,,unique,greedy_max_coverage,band2
+25,5,"Min_EState, PMI_Ratio1, Quaternary_Carbons, Spiro_atom_count, TopologicalRadius",unique,greedy_max_coverage,band2
+10 vs 15,10,"Asphericity, Avg_EState, BertzCTIndex, BridgeheadAtomCount, Eccentricity, FractionCSP3, GraphDistanceDistributionEntropy, PMI2, ShapeIndex, StereocenterCount",overlap,greedy_max_coverage,band3
+10 vs 20,10,"Asphericity, Avg_EState, BertzCTIndex, BridgeheadAtomCount, Eccentricity, FractionCSP3, GraphDistanceDistributionEntropy, PMI2, ShapeIndex, StereocenterCount",overlap,greedy_max_coverage,band3
+10 vs 25,10,"Asphericity, Avg_EState, BertzCTIndex, BridgeheadAtomCount, Eccentricity, FractionCSP3, GraphDistanceDistributionEntropy, PMI2, ShapeIndex, StereocenterCount",overlap,greedy_max_coverage,band3
+15 vs 20,15,"Asphericity, Avg_EState, BertzCTIndex, BridgeheadAtomCount, Eccentricity, FractionCSP3, GraphDistanceDistributionEntropy, InertialShapeFactor, Max_EState, PMI2, Phenol, ShapeIndex, SpherocityIndex, StereocenterCount, TPSA",overlap,greedy_max_coverage,band3
+15 vs 25,15,"Asphericity, Avg_EState, BertzCTIndex, BridgeheadAtomCount, Eccentricity, FractionCSP3, GraphDistanceDistributionEntropy, InertialShapeFactor, Max_EState, PMI2, Phenol, ShapeIndex, SpherocityIndex, StereocenterCount, TPSA",overlap,greedy_max_coverage,band3
+20 vs 25,18,"AromaticRingCount, Asphericity, Avg_EState, BertzCTIndex, BridgeheadAtomCount, Eccentricity, FractionCSP3, GraphDistanceDistributionEntropy, InertialShapeFactor, Max_EState, Min_EState, PMI2, Phenol, ShapeIndex, SpherocityIndex, StereocenterCount, TPSA, partial_charge_max",overlap,greedy_max_coverage,band3
+10 vs 15 vs 20,10,"Asphericity, Avg_EState, BertzCTIndex, BridgeheadAtomCount, Eccentricity, FractionCSP3, GraphDistanceDistributionEntropy, PMI2, ShapeIndex, StereocenterCount",overlap,greedy_max_coverage,band3
+10 vs 15 vs 25,10,"Asphericity, Avg_EState, BertzCTIndex, BridgeheadAtomCount, Eccentricity, FractionCSP3, GraphDistanceDistributionEntropy, PMI2, ShapeIndex, StereocenterCount",overlap,greedy_max_coverage,band3
+10 vs 20 vs 25,10,"Asphericity, Avg_EState, BertzCTIndex, BridgeheadAtomCount, Eccentricity, FractionCSP3, GraphDistanceDistributionEntropy, PMI2, ShapeIndex, StereocenterCount",overlap,greedy_max_coverage,band3
+15 vs 20 vs 25,15,"Asphericity, Avg_EState, BertzCTIndex, BridgeheadAtomCount, Eccentricity, FractionCSP3, GraphDistanceDistributionEntropy, InertialShapeFactor, Max_EState, PMI2, Phenol, ShapeIndex, SpherocityIndex, StereocenterCount, TPSA",overlap,greedy_max_coverage,band3
+10 vs 15 vs 20 vs 25,10,"Asphericity, Avg_EState, BertzCTIndex, BridgeheadAtomCount, Eccentricity, FractionCSP3, GraphDistanceDistributionEntropy, PMI2, ShapeIndex, StereocenterCount",overlap,greedy_max_coverage,band3
+10,0,,unique,greedy_max_coverage,band3
+15,0,,unique,greedy_max_coverage,band3
+20,2,"HBA, RingCount",unique,greedy_max_coverage,band3
+25,7,"Chi4, HeteroatomCount, PMI3, PathComplexityIndex, Quaternary_Carbons, TopologicalDiameter, TopologicalRadius",unique,greedy_max_coverage,band3
+10 vs 15,10,"AtomInformationContent, BertzCTIndex, BoundingBoxVolume, Chi0, Chi1, Chi2, Chi3, Chi4, HeteroatomCount, TPSA",overlap,greedy_max_coverage,band4
+10 vs 20,10,"AtomInformationContent, BertzCTIndex, BoundingBoxVolume, Chi0, Chi1, Chi2, Chi3, Chi4, HeteroatomCount, TPSA",overlap,greedy_max_coverage,band4
+10 vs 25,10,"AtomInformationContent, BertzCTIndex, BoundingBoxVolume, Chi0, Chi1, Chi2, Chi3, Chi4, HeteroatomCount, TPSA",overlap,greedy_max_coverage,band4
+15 vs 20,15,"AtomInformationContent, BalabanIndex, BertzCTIndex, BoundingBoxVolume, Chi0, Chi1, Chi2, Chi3, Chi4, CovalentRadiusSum, HeteroatomCount, RingCount, SSSR_count, StereocenterCount, TPSA",overlap,greedy_max_coverage,band4
+15 vs 25,15,"AtomInformationContent, BalabanIndex, BertzCTIndex, BoundingBoxVolume, Chi0, Chi1, Chi2, Chi3, Chi4, CovalentRadiusSum, HeteroatomCount, RingCount, SSSR_count, StereocenterCount, TPSA",overlap,greedy_max_coverage,band4
+20 vs 25,20,"AtomInformationContent, Avg_EState, BalabanIndex, BertzCTIndex, BoundingBoxVolume, Chi0, Chi1, Chi2, Chi3, Chi4, CovalentRadiusSum, HBA, HeteroatomCount, Max_EState, Min_EState, RingCount, RotatableBonds, SSSR_count, StereocenterCount, TPSA",overlap,greedy_max_coverage,band4
+10 vs 15 vs 20,10,"AtomInformationContent, BertzCTIndex, BoundingBoxVolume, Chi0, Chi1, Chi2, Chi3, Chi4, HeteroatomCount, TPSA",overlap,greedy_max_coverage,band4
+10 vs 15 vs 25,10,"AtomInformationContent, BertzCTIndex, BoundingBoxVolume, Chi0, Chi1, Chi2, Chi3, Chi4, HeteroatomCount, TPSA",overlap,greedy_max_coverage,band4
+10 vs 20 vs 25,10,"AtomInformationContent, BertzCTIndex, BoundingBoxVolume, Chi0, Chi1, Chi2, Chi3, Chi4, HeteroatomCount, TPSA",overlap,greedy_max_coverage,band4
+15 vs 20 vs 25,15,"AtomInformationContent, BalabanIndex, BertzCTIndex, BoundingBoxVolume, Chi0, Chi1, Chi2, Chi3, Chi4, CovalentRadiusSum, HeteroatomCount, RingCount, SSSR_count, StereocenterCount, TPSA",overlap,greedy_max_coverage,band4
+10 vs 15 vs 20 vs 25,10,"AtomInformationContent, BertzCTIndex, BoundingBoxVolume, Chi0, Chi1, Chi2, Chi3, Chi4, HeteroatomCount, TPSA",overlap,greedy_max_coverage,band4
+10,0,,unique,greedy_max_coverage,band4
+15,0,,unique,greedy_max_coverage,band4
+20,0,,unique,greedy_max_coverage,band4
+25,5,"DoubleBondCount, Ether, HeavyAtomCount, LogP, TopologicalDiameter",unique,greedy_max_coverage,band4

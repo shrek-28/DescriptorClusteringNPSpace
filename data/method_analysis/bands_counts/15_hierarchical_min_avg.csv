@@ -1,0 +1,16 @@
+comparison,n_common,common_descriptors,analysis_type,desc_count,method
+band1 vs band2,6,"AtomInformationContent, BondInformationContent, Macrocycle_count, MolWt, PMI_Ratio1, TripleBondCount",overlap,15,hierarchical_min_avg
+band1 vs band3,5,"AtomInformationContent, BondInformationContent, Halogenated_Aromatics, MolarRefractivity, PMI_Ratio1",overlap,15,hierarchical_min_avg
+band1 vs band4,6,"BondInformationContent, BoundingBoxVolume, Hydroxyl, MolWt, PMI_Ratio1, TripleBondCount",overlap,15,hierarchical_min_avg
+band2 vs band3,8,"Amine, AtomInformationContent, BondInformationContent, BridgeheadAtomCount, Lactone, Nitrile, PMI_Ratio1, Phenol",overlap,15,hierarchical_min_avg
+band2 vs band4,9,"Amine, BondInformationContent, BridgeheadAtomCount, HBD, Lactone, MolWt, PMI_Ratio1, TripleBondCount, partial_charge_min",overlap,15,hierarchical_min_avg
+band3 vs band4,5,"Amine, BondInformationContent, BridgeheadAtomCount, Lactone, PMI_Ratio1",overlap,15,hierarchical_min_avg
+band1 vs band2 vs band3,3,"AtomInformationContent, BondInformationContent, PMI_Ratio1",overlap,15,hierarchical_min_avg
+band1 vs band2 vs band4,4,"BondInformationContent, MolWt, PMI_Ratio1, TripleBondCount",overlap,15,hierarchical_min_avg
+band1 vs band3 vs band4,2,"BondInformationContent, PMI_Ratio1",overlap,15,hierarchical_min_avg
+band2 vs band3 vs band4,5,"Amine, BondInformationContent, BridgeheadAtomCount, Lactone, PMI_Ratio1",overlap,15,hierarchical_min_avg
+band1 vs band2 vs band3 vs band4,2,"BondInformationContent, PMI_Ratio1",overlap,15,hierarchical_min_avg
+band1,5,"Chi0, Ester, Quaternary_Carbons, StereocenterCount, WienerIndex",unique,15,hierarchical_min_avg
+band2,2,"BalabanIndex, Halogen",unique,15,hierarchical_min_avg
+band3,5,"Alkyne, Carboxylic_Acid, Ketone, Lactam, Sulfonyl",unique,15,hierarchical_min_avg
+band4,4,"CovalentRadiusSum, Fraction_aromatic_rings, Largest_ring_size, PMI_Ratio2",unique,15,hierarchical_min_avg

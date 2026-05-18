@@ -1,0 +1,16 @@
+comparison,n_common,common_descriptors,analysis_type,method,band
+10 vs 15,7,"Amine, BondInformationContent, Fraction_aromatic_rings, Lactone, PMI_Ratio1, PMI_Ratio2, partial_charge_min",overlap,hierarchical_min_avg,band4
+10 vs 20,7,"Amine, BondInformationContent, Fraction_aromatic_rings, Lactone, PMI_Ratio1, PMI_Ratio2, partial_charge_min",overlap,hierarchical_min_avg,band4
+10 vs 25,7,"Amine, BondInformationContent, Fraction_aromatic_rings, Lactone, PMI_Ratio1, PMI_Ratio2, partial_charge_min",overlap,hierarchical_min_avg,band4
+15 vs 20,15,"Amine, BondInformationContent, BoundingBoxVolume, BridgeheadAtomCount, CovalentRadiusSum, Fraction_aromatic_rings, HBD, Hydroxyl, Lactone, Largest_ring_size, MolWt, PMI_Ratio1, PMI_Ratio2, TripleBondCount, partial_charge_min",overlap,hierarchical_min_avg,band4
+15 vs 25,14,"Amine, BondInformationContent, BoundingBoxVolume, CovalentRadiusSum, Fraction_aromatic_rings, HBD, Hydroxyl, Lactone, Largest_ring_size, MolWt, PMI_Ratio1, PMI_Ratio2, TripleBondCount, partial_charge_min",overlap,hierarchical_min_avg,band4
+20 vs 25,18,"Amine, AromaticRingCount, BondInformationContent, BoundingBoxVolume, CovalentRadiusSum, DoubleBondCount, Eccentricity, Fraction_aromatic_rings, HBD, Hydroxyl, Lactone, Largest_ring_size, MolWt, PMI_Ratio1, PMI_Ratio2, RadiusOfGyration, TripleBondCount, partial_charge_min",overlap,hierarchical_min_avg,band4
+10 vs 15 vs 20,7,"Amine, BondInformationContent, Fraction_aromatic_rings, Lactone, PMI_Ratio1, PMI_Ratio2, partial_charge_min",overlap,hierarchical_min_avg,band4
+10 vs 15 vs 25,7,"Amine, BondInformationContent, Fraction_aromatic_rings, Lactone, PMI_Ratio1, PMI_Ratio2, partial_charge_min",overlap,hierarchical_min_avg,band4
+10 vs 20 vs 25,7,"Amine, BondInformationContent, Fraction_aromatic_rings, Lactone, PMI_Ratio1, PMI_Ratio2, partial_charge_min",overlap,hierarchical_min_avg,band4
+15 vs 20 vs 25,14,"Amine, BondInformationContent, BoundingBoxVolume, CovalentRadiusSum, Fraction_aromatic_rings, HBD, Hydroxyl, Lactone, Largest_ring_size, MolWt, PMI_Ratio1, PMI_Ratio2, TripleBondCount, partial_charge_min",overlap,hierarchical_min_avg,band4
+10 vs 15 vs 20 vs 25,7,"Amine, BondInformationContent, Fraction_aromatic_rings, Lactone, PMI_Ratio1, PMI_Ratio2, partial_charge_min",overlap,hierarchical_min_avg,band4
+10,3,"FractionCSP3, Macrocycle_count, Nitrile",unique,hierarchical_min_avg,band4
+15,0,,unique,hierarchical_min_avg,band4
+20,1,BalabanIndex,unique,hierarchical_min_avg,band4
+25,7,"Bridged_ring_count, Chi2, Fused_ring_count, GraphDistanceDistributionEntropy, MolarRefractivity, Spiro_atom_count, TotalAtomCount",unique,hierarchical_min_avg,band4

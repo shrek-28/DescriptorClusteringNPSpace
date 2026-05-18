@@ -1,0 +1,16 @@
+comparison,n_common,common_descriptors,analysis_type,method,band
+10 vs 15,10,"AromaticRingCount, Asphericity, Avg_EState, BertzCTIndex, Carbonyl, Eccentricity, GraphDistanceDistributionEntropy, PMI2, PathComplexityIndex, SpherocityIndex",overlap,greedy_max_coverage,band2
+10 vs 20,10,"AromaticRingCount, Asphericity, Avg_EState, BertzCTIndex, Carbonyl, Eccentricity, GraphDistanceDistributionEntropy, PMI2, PathComplexityIndex, SpherocityIndex",overlap,greedy_max_coverage,band2
+10 vs 25,10,"AromaticRingCount, Asphericity, Avg_EState, BertzCTIndex, Carbonyl, Eccentricity, GraphDistanceDistributionEntropy, PMI2, PathComplexityIndex, SpherocityIndex",overlap,greedy_max_coverage,band2
+15 vs 20,15,"AromaticRingCount, Asphericity, Avg_EState, BertzCTIndex, BridgeheadAtomCount, Carbonyl, Eccentricity, GraphDistanceDistributionEntropy, HeteroatomCount, Largest_ring_size, PMI2, PathComplexityIndex, SpherocityIndex, TPSA, TopologicalDiameter",overlap,greedy_max_coverage,band2
+15 vs 25,15,"AromaticRingCount, Asphericity, Avg_EState, BertzCTIndex, BridgeheadAtomCount, Carbonyl, Eccentricity, GraphDistanceDistributionEntropy, HeteroatomCount, Largest_ring_size, PMI2, PathComplexityIndex, SpherocityIndex, TPSA, TopologicalDiameter",overlap,greedy_max_coverage,band2
+20 vs 25,20,"AromaticRingCount, Asphericity, Avg_EState, BertzCTIndex, BridgeheadAtomCount, Carbonyl, Eccentricity, GraphDistanceDistributionEntropy, HBA, HeteroatomCount, InertialShapeFactor, Largest_ring_size, Max_EState, PMI2, PathComplexityIndex, RadiusOfGyration, ShapeIndex, SpherocityIndex, TPSA, TopologicalDiameter",overlap,greedy_max_coverage,band2
+10 vs 15 vs 20,10,"AromaticRingCount, Asphericity, Avg_EState, BertzCTIndex, Carbonyl, Eccentricity, GraphDistanceDistributionEntropy, PMI2, PathComplexityIndex, SpherocityIndex",overlap,greedy_max_coverage,band2
+10 vs 15 vs 25,10,"AromaticRingCount, Asphericity, Avg_EState, BertzCTIndex, Carbonyl, Eccentricity, GraphDistanceDistributionEntropy, PMI2, PathComplexityIndex, SpherocityIndex",overlap,greedy_max_coverage,band2
+10 vs 20 vs 25,10,"AromaticRingCount, Asphericity, Avg_EState, BertzCTIndex, Carbonyl, Eccentricity, GraphDistanceDistributionEntropy, PMI2, PathComplexityIndex, SpherocityIndex",overlap,greedy_max_coverage,band2
+15 vs 20 vs 25,15,"AromaticRingCount, Asphericity, Avg_EState, BertzCTIndex, BridgeheadAtomCount, Carbonyl, Eccentricity, GraphDistanceDistributionEntropy, HeteroatomCount, Largest_ring_size, PMI2, PathComplexityIndex, SpherocityIndex, TPSA, TopologicalDiameter",overlap,greedy_max_coverage,band2
+10 vs 15 vs 20 vs 25,10,"AromaticRingCount, Asphericity, Avg_EState, BertzCTIndex, Carbonyl, Eccentricity, GraphDistanceDistributionEntropy, PMI2, PathComplexityIndex, SpherocityIndex",overlap,greedy_max_coverage,band2
+10,0,,unique,greedy_max_coverage,band2
+15,0,,unique,greedy_max_coverage,band2
+20,0,,unique,greedy_max_coverage,band2
+25,5,"Min_EState, PMI_Ratio1, Quaternary_Carbons, Spiro_atom_count, TopologicalRadius",unique,greedy_max_coverage,band2

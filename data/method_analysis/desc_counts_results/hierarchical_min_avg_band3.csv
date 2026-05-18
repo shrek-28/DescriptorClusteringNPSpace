@@ -1,0 +1,16 @@
+comparison,n_common,common_descriptors,analysis_type,method,band
+10 vs 15,10,"Amine, Carboxylic_Acid, Halogenated_Aromatics, Ketone, Lactam, Lactone, Nitrile, PMI_Ratio1, Phenol, Sulfonyl",overlap,hierarchical_min_avg,band3
+10 vs 20,10,"Amine, Carboxylic_Acid, Halogenated_Aromatics, Ketone, Lactam, Lactone, Nitrile, PMI_Ratio1, Phenol, Sulfonyl",overlap,hierarchical_min_avg,band3
+10 vs 25,10,"Amine, Carboxylic_Acid, Halogenated_Aromatics, Ketone, Lactam, Lactone, Nitrile, PMI_Ratio1, Phenol, Sulfonyl",overlap,hierarchical_min_avg,band3
+15 vs 20,15,"Alkyne, Amine, AtomInformationContent, BondInformationContent, BridgeheadAtomCount, Carboxylic_Acid, Halogenated_Aromatics, Ketone, Lactam, Lactone, MolarRefractivity, Nitrile, PMI_Ratio1, Phenol, Sulfonyl",overlap,hierarchical_min_avg,band3
+15 vs 25,15,"Alkyne, Amine, AtomInformationContent, BondInformationContent, BridgeheadAtomCount, Carboxylic_Acid, Halogenated_Aromatics, Ketone, Lactam, Lactone, MolarRefractivity, Nitrile, PMI_Ratio1, Phenol, Sulfonyl",overlap,hierarchical_min_avg,band3
+20 vs 25,19,"Alkyne, Amine, Asphericity, AtomInformationContent, BalabanIndex, BondInformationContent, BoundingBoxVolume, BridgeheadAtomCount, Carboxylic_Acid, GraphDistanceDistributionEntropy, Halogenated_Aromatics, Ketone, Lactam, Lactone, MolarRefractivity, Nitrile, PMI_Ratio1, Phenol, Sulfonyl",overlap,hierarchical_min_avg,band3
+10 vs 15 vs 20,10,"Amine, Carboxylic_Acid, Halogenated_Aromatics, Ketone, Lactam, Lactone, Nitrile, PMI_Ratio1, Phenol, Sulfonyl",overlap,hierarchical_min_avg,band3
+10 vs 15 vs 25,10,"Amine, Carboxylic_Acid, Halogenated_Aromatics, Ketone, Lactam, Lactone, Nitrile, PMI_Ratio1, Phenol, Sulfonyl",overlap,hierarchical_min_avg,band3
+10 vs 20 vs 25,10,"Amine, Carboxylic_Acid, Halogenated_Aromatics, Ketone, Lactam, Lactone, Nitrile, PMI_Ratio1, Phenol, Sulfonyl",overlap,hierarchical_min_avg,band3
+15 vs 20 vs 25,15,"Alkyne, Amine, AtomInformationContent, BondInformationContent, BridgeheadAtomCount, Carboxylic_Acid, Halogenated_Aromatics, Ketone, Lactam, Lactone, MolarRefractivity, Nitrile, PMI_Ratio1, Phenol, Sulfonyl",overlap,hierarchical_min_avg,band3
+10 vs 15 vs 20 vs 25,10,"Amine, Carboxylic_Acid, Halogenated_Aromatics, Ketone, Lactam, Lactone, Nitrile, PMI_Ratio1, Phenol, Sulfonyl",overlap,hierarchical_min_avg,band3
+10,0,,unique,hierarchical_min_avg,band3
+15,0,,unique,hierarchical_min_avg,band3
+20,1,Chi3,unique,hierarchical_min_avg,band3
+25,6,"HBD, Largest_ring_size, Spiro_atom_count, WienerIndex, ZagrebIndex, partial_charge_min",unique,hierarchical_min_avg,band3

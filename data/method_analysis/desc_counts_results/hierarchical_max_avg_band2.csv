@@ -1,0 +1,16 @@
+comparison,n_common,common_descriptors,analysis_type,method,band
+10 vs 15,9,"Amine, BertzCTIndex, FractionCSP3, Halogen, Lactone, LogP, PMI_Ratio2, Phenol, TripleBondCount",overlap,hierarchical_max_avg,band2
+10 vs 20,8,"Amine, BertzCTIndex, FractionCSP3, Lactone, LogP, PMI_Ratio2, Phenol, TripleBondCount",overlap,hierarchical_max_avg,band2
+10 vs 25,7,"Amine, BertzCTIndex, Lactone, LogP, PMI_Ratio2, Phenol, TripleBondCount",overlap,hierarchical_max_avg,band2
+15 vs 20,14,"Amine, BalabanIndex, BertzCTIndex, Carbonyl, FractionCSP3, Lactone, LogP, Macrocycle_count, MolWt, Nitrile, PMI_Ratio2, Phenol, SSSR_count, TripleBondCount",overlap,hierarchical_max_avg,band2
+15 vs 25,13,"Amine, BalabanIndex, BertzCTIndex, Carbonyl, Lactone, LogP, Macrocycle_count, MolWt, Nitrile, PMI_Ratio2, Phenol, SSSR_count, TripleBondCount",overlap,hierarchical_max_avg,band2
+20 vs 25,19,"Amine, Asphericity, BalabanIndex, BertzCTIndex, BridgeheadAtomCount, Carbonyl, Chi2, Halogenated_Aromatics, Lactone, LogP, Macrocycle_count, MolWt, Nitrile, PMI_Ratio2, Phenol, SSSR_count, TripleBondCount, WienerIndex, partial_charge_min",overlap,hierarchical_max_avg,band2
+10 vs 15 vs 20,8,"Amine, BertzCTIndex, FractionCSP3, Lactone, LogP, PMI_Ratio2, Phenol, TripleBondCount",overlap,hierarchical_max_avg,band2
+10 vs 15 vs 25,7,"Amine, BertzCTIndex, Lactone, LogP, PMI_Ratio2, Phenol, TripleBondCount",overlap,hierarchical_max_avg,band2
+10 vs 20 vs 25,7,"Amine, BertzCTIndex, Lactone, LogP, PMI_Ratio2, Phenol, TripleBondCount",overlap,hierarchical_max_avg,band2
+15 vs 20 vs 25,13,"Amine, BalabanIndex, BertzCTIndex, Carbonyl, Lactone, LogP, Macrocycle_count, MolWt, Nitrile, PMI_Ratio2, Phenol, SSSR_count, TripleBondCount",overlap,hierarchical_max_avg,band2
+10 vs 15 vs 20 vs 25,7,"Amine, BertzCTIndex, Lactone, LogP, PMI_Ratio2, Phenol, TripleBondCount",overlap,hierarchical_max_avg,band2
+10,1,Fused_ring_count,unique,hierarchical_max_avg,band2
+15,0,,unique,hierarchical_max_avg,band2
+20,0,,unique,hierarchical_max_avg,band2
+25,6,"AromaticRingCount, Fraction_aromatic_rings, MolarRefractivity, PMI_Ratio1, TPSA, ZagrebIndex",unique,hierarchical_max_avg,band2
