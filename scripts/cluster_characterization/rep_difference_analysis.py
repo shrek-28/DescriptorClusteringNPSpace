@@ -66,14 +66,14 @@ for descriptor in descriptors:
             "representative": rep_name,
             "column_name": col,
 
-            "min": series.min(),
-            "max": series.max(),
-            "mean": series.mean(),
-            "median": series.median(),
-            "std_dev": series.std(),
-            "variance": series.var(),
-            "skew": skew(series),
-            "kurtosis": kurtosis(series)
+            "min": round(series.min(),2),
+            "max": round(series.max(),2),
+            "mean": round(series.mean(),2),
+            "median": round(series.median(),2),
+            "std_dev": round(series.std(),2),
+            "variance": round(series.var(),2),
+            "skew": round(skew(series),2),
+            "kurtosis": round(kurtosis(series),2)
         })
 
 stats_df = pd.DataFrame(stats_results)
@@ -146,11 +146,11 @@ for descriptor in descriptors:
             "descriptor": descriptor,
             "representative": rep_name,
 
-            "avg_abs_mean_difference": mean_abs_diff,
-            "avg_abs_median_difference": median_abs_diff,
+            "avg_abs_mean_difference": round(mean_abs_diff,2),
+            "avg_abs_median_difference": round(median_abs_diff,2),
 
             "avg_pairwise_diverse_difference":
-                avg_diverse_difference
+                round(avg_diverse_difference,2)
         })
 
 difference_df = pd.DataFrame(difference_results)
