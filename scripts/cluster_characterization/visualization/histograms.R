@@ -374,6 +374,7 @@ plot_histogram_distribution(input_file="/Users/shreyasree/Documents/GitHub/Descr
 
 # cluster similarity validation 
 plot_histogram_distribution(input_file="/Users/shreyasree/Documents/GitHub/DescriptorClusteringNPSpace/data/cluster_profiling/cluster_similarity_validation.csv", column_name="separation_ratio", output_file="/Users/shreyasree/Documents/GitHub/DescriptorClusteringNPSpace/plots/cluster_profile_analysis/histograms/separation_ratio_histogram.pdf", binwidth = 0.5, fill_color = "#06402B", mean_line_color = "darkred", median_line_color = "black")
+plot_histogram_distribution(input_file="/Users/shreyasree/Documents/GitHub/DescriptorClusteringNPSpace/data/cluster_profiling/cluster_similarity_validation.csv", column_name="mean_within_similarity", output_file="/Users/shreyasree/Documents/GitHub/DescriptorClusteringNPSpace/plots/cluster_profile_analysis/histograms/mean_within_similarity_histogram.pdf", binwidth = 0.05, fill_color = "#06402B", mean_line_color = "darkred", median_line_color = "black")
 
 # cluster probability stats
 plot_histogram_distribution(input_file="/Users/shreyasree/Documents/GitHub/DescriptorClusteringNPSpace/data/cluster_profiling/cluster_probability_stats.csv", column_name="mean_probability", output_file="/Users/shreyasree/Documents/GitHub/DescriptorClusteringNPSpace/plots/cluster_profile_analysis/histograms/mean_probability_histogram.pdf", binwidth = 0.05, fill_color = "#06402B", mean_line_color = "darkred", median_line_color = "black")
