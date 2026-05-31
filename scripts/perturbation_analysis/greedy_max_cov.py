@@ -112,7 +112,6 @@ def generate_greedy_correlation_matrices(
         )
 
         print(f"Selected {len(selected_features)} features")
-        print(selected_features[:10], "...")
 
         # Read original descriptor dataframe
         final_df = pd.read_csv(original_csv)
@@ -142,13 +141,47 @@ def generate_greedy_correlation_matrices(
         selected2
     )
 
-corr1, features1, corr2, features2 = generate_greedy_correlation_matrices(
-    flatfile_csv1="DATA/perturbation_data/rs_101/40_df_flat_file.csv",
-    flatfile_csv2="DATA/perturbation_data/rs_101/60_df_flat_file.csv",
-    original_csv1="DATA/perturbation_data/rs_101/40_df.csv",
-    original_csv2="DATA/perturbation_data/rs_101/60_df.csv",
-    target_count=25
-)
 
-corr1.to_csv("DATA/perturbation_data/rs_101/40_df_greedy_corr_matrix.csv")
-corr2.to_csv("DATA/perturbation_data/rs_101/60_df_greedy_corr_matrix.csv")
+# =====================================================
+# Run for all perturbation seeds
+# =====================================================
+
+random_seeds = [0, 1, 101, 42, 123]
+
+for seed in random_seeds:
+
+    print(f"\nProcessing random seed {seed}")
+
+    corr1, features1, corr2, features2 = (
+        generate_greedy_correlation_matrices(
+            flatfile_csv1=f"DATA/perturbation_data/rs_{seed}/40_df_flat_file.csv",
+            flatfile_csv2=f"DATA/perturbation_data/rs_{seed}/60_df_flat_file.csv",
+            original_csv1=f"DATA/perturbation_data/rs_{seed}/40_df.csv",
+            original_csv2=f"DATA/perturbation_data/rs_{seed}/60_df.csv",
+            target_count=25
+        )
+    )
+
+    corr1.to_csv(
+        f"DATA/perturbation_data/rs_{seed}/40_df_greedy_corr_matrix.csv"
+    )
+
+    corr2.to_csv(
+        f"DATA/perturbation_data/rs_{seed}/60_df_greedy_corr_matrix.csv"
+    )
+
+    pd.DataFrame(
+        {"feature": features1}
+    ).to_csv(
+        f"DATA/perturbation_data/rs_{seed}/40_df_selected_features.csv",
+        index=False
+    )
+
+    pd.DataFrame(
+        {"feature": features2}
+    ).to_csv(
+        f"DATA/perturbation_data/rs_{seed}/60_df_selected_features.csv",
+        index=False
+    )
+
+    print(f"Completed random seed {seed}")

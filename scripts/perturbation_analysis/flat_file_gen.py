@@ -1,10 +1,7 @@
-import pandas as pd 
-import numpy as np 
+import pandas as pd
+import numpy as np
 
 def generate_corr_flatfile(df1, df2, output_path1, output_path2):
-    
-    import pandas as pd
-    import numpy as np
 
     drop_cols = ['ConformerCount', 'Unnamed: 0', 'Aromatic_ring_count']
 
@@ -14,9 +11,6 @@ def generate_corr_flatfile(df1, df2, output_path1, output_path2):
 
         numeric_cols = df.select_dtypes(include=np.number).columns
         sorted_numeric_cols = sorted(numeric_cols)
-
-        print("\nNumeric Columns:")
-        print(sorted_numeric_cols)
 
         corr = df.corr(method='spearman').abs()
 
@@ -39,8 +33,8 @@ def generate_corr_flatfile(df1, df2, output_path1, output_path2):
 
         corr_long.to_csv(output_path, index=False)
 
-        print(corr_long)
-        print("Shape:", corr_long.shape)
+        print(f"Saved: {output_path}")
+        print(f"Shape: {corr_long.shape}")
 
         return corr_long
 
@@ -49,12 +43,19 @@ def generate_corr_flatfile(df1, df2, output_path1, output_path2):
 
     return result1, result2
 
-df1 = pd.read_csv("DATA/perturbation_data/rs_123/40_df.csv")
-df2 = pd.read_csv("DATA/perturbation_data/rs_123/60_df.csv")
 
-corr1, corr2 = generate_corr_flatfile(
-    df1,
-    df2,
-    "DATA/perturbation_data/rs_123/40_df_flat_file.csv",
-    "DATA/perturbation_data/rs_123/60_df_flat_file.csv"
-)
+random_seeds = [0, 1, 101, 42, 123]
+
+for seed in random_seeds:
+
+    df1 = pd.read_csv(f"DATA/perturbation_data/rs_{seed}/40_df.csv")
+    df2 = pd.read_csv(f"DATA/perturbation_data/rs_{seed}/60_df.csv")
+
+    generate_corr_flatfile(
+        df1,
+        df2,
+        f"DATA/perturbation_data/rs_{seed}/40_df_flat_file.csv",
+        f"DATA/perturbation_data/rs_{seed}/60_df_flat_file.csv"
+    )
+
+    print(f"Completed random seed {seed}\n")
