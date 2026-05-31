@@ -40,8 +40,8 @@ cluster_sizes["size_bin"] = pd.qcut(
 
 # Target distribution (sums to 20)
 bin_targets = {
-    "small": 7,
-    "medium": 7,
+    "small": 6,
+    "medium": 6,
     "large": 6
 }
 
