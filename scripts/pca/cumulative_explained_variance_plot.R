@@ -9,7 +9,7 @@ library(readr)
 # Read PCA data
 # =========================
 pca_all <- read_csv(
-  "/Users/shreyasree/Documents/GitHub/DescriptorClusteringNPSpace/data/pca_data/pca_all_82_descriptors.csv"
+  "/Users/shreyasree/Documents/GitHub/DescriptorClusteringNPSpace/data/pca_data/pca_all_80_descriptors.csv"
 ) %>%
   mutate(descriptor_set = "all")
 
@@ -25,7 +25,7 @@ pca_combined <- bind_rows(pca_all, pca_20)
 # =========================
 
 descriptor_labels <- c(
-  all      = "All 82 descriptors",
+  all      = "All 80 descriptors",
   selected = "Selected 20 descriptors"
 )
 
@@ -109,4 +109,5 @@ p <- pca_combined %>%
     axis.title = element_text(size = 9)
   )
 
+print(p)
 ggsave("/Users/shreyasree/Documents/GitHub/DescriptorClusteringNPSpace/plots/pca/explained_variance_plot.pdf", plot=p, width=6, height=4, dpi=300)

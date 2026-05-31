@@ -30,4 +30,4 @@ pca_all_table = pd.DataFrame({
     "cumulative_variance": cumulative_variance_all
 })
 
-pca_all_table.to_csv("data/pca-data/pca_all_82_descriptors.csv", index=False)
+pca_all_table.to_csv("data/pca_data/pca_all_80_descriptors.csv", index=False)
