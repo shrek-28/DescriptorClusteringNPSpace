@@ -19,6 +19,20 @@ hist_data <- hist_data %>%
     FillGroup = ifelse(x < 0, "Negative", "Positive")
   )
 
+hist_table <- hist_data %>%
+  select(
+    xmin,
+    xmax,
+    x,
+    count,
+    FillGroup
+  )
+
+write_csv(
+  hist_table,
+  "/Users/shreyasree/Documents/GitHub/DescriptorClusteringNPSpace/data/complete_correlation_matrix/correlation_histogram_bins.csv"
+)
+
 # =========================================================
 # PLOT
 # =========================================================
