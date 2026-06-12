@@ -1,31 +1,6 @@
 import pandas as pd
 import os
 
-# =========================================================
-# FUNCTION:
-# Split CSV into multiple CSV files
-# =========================================================
-#
-# PARAMETERS
-# ---------------------------------------------------------
-# input_file   : Path to input CSV
-#
-# output_folder: Folder where split CSVs
-#                will be saved
-#
-# col1         : First column used for grouping
-#
-# col2         : Second column used for grouping
-#
-# OUTPUT FILES
-# ---------------------------------------------------------
-# {col1_value}_{col2_value}.csv
-#
-# Example:
-# 15_band1.csv
-# 15_band2.csv
-#
-# =========================================================
 
 def split_csv_by_columns(
     input_file,
