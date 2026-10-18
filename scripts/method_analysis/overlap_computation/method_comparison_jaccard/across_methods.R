@@ -79,14 +79,16 @@ for(file in files){
     scale_fill_gradient(low = "white", high = "darkgreen") +
     labs(
       title = paste0(desc_count, " | ", band),
-      x = "Descriptor Count",
-      y = "Descriptor Count",
+      x = "Selection Method",
+      y = "Selection Method",
       fill = "Jaccard"
     ) +
     theme_minimal() +
     theme(
-      axis.text.x = element_text(angle = 45, hjust = 1),
-      panel.grid = element_blank()
+      axis.text.x = element_text(angle = 45, hjust = 1, size = 12),
+      axis.text.y = element_text(size = 12),
+      panel.grid = element_blank(),
+      title = element_text(face = "bold", hjust = 0.5, size = 14)
     )
   
   ggsave(

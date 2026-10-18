@@ -57,9 +57,9 @@ plot_metric_heatmaps <- function(
   # Text sizes
   # -------------------------
   
-  title_size = 14,
-  axis_size = 11,
-  annotation_size = 3.5,
+  title_size = 16,
+  axis_size = 15,
+  annotation_size = 5.5,
   
   # -------------------------
   # Figure size
@@ -205,6 +205,21 @@ plot_metric_heatmaps(
   
   output_file =
     "/Users/shreyasree/Documents/GitHub/DescriptorClusteringNPSpace/plots/clustering_try_result_analysis/umap_hdbscan/metric_heatmaps_vs_hyperparams.pdf",
+  
+  fill_colors = c(
+    "#440154",
+    "#B12A90",
+    "#1F968B",
+    "#FDE725"
+  )
+)
+plot_metric_heatmaps(
+  
+  input_file =
+    "/Users/shreyasree/Documents/GitHub/DescriptorClusteringNPSpace/data/clustering_try_results/umap_hdbscan/results_db_umap_hdbscan.csv",
+  
+  output_file =
+    "/Users/shreyasree/Documents/GitHub/DescriptorClusteringNPSpace/plots/clustering_try_result_analysis/umap_hdbscan/metric_heatmaps_vs_hyperparams.png",
   
   fill_colors = c(
     "#440154",

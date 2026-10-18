@@ -62,14 +62,16 @@ for(file in files){
     ) +
     labs(
       title = file_name,
-      x = "Band",
-      y = "Band",
+      x = "Correlation Threshold Range",
+      y = "Correlation Threshold Range",
       fill = "Jaccard"
     ) +
     theme_minimal() +
     theme(
-      axis.text.x = element_text(angle = 45, hjust = 1),
-      panel.grid = element_blank()
+      axis.text.x = element_text(angle = 45, hjust = 1, size = 12),
+      axis.text.y = element_text(size = 12),
+      panel.grid = element_blank(),
+      title = element_text(face = "bold", hjust = 0.5, size = 14)
     )
   
   ggsave(
