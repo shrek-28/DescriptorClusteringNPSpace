@@ -13,7 +13,7 @@ df <- df %>%
 
 bar_color <- "#06402B"   # Bar color
 bar_width <- 0.85        # Bar breadth (smaller = more spacing)
-text_size <- 3.5         # Frequency annotation size
+text_size <- 5.5         # Frequency annotation size
 
 # ---- Plot ----
 
@@ -59,8 +59,8 @@ p <- ggplot(df, aes(x = Rank, y = frequency, fill = "Frequency")) +
       hjust = 0.5
     ),
     
-    axis.text.x = element_text(size = 11),
-    axis.text.y = element_text(size = 11)
+    axis.text.x = element_text(size = 13),
+    axis.text.y = element_text(size = 13)
   )
 
 ggsave("/Users/shreyasree/Documents/GitHub/DescriptorClusteringNPSpace/plots/scaffold_decomposition/top_20_bemis_murcko_scaffolds.pdf", plot=p, width=16, height=7)

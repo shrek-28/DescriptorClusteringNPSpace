@@ -55,7 +55,7 @@ for(file in files){
     aes(Var1, Var2, fill = value)
   ) +
     geom_tile(color = "white") +
-    geom_text(aes(label = round(value, 2)), size = 4) +
+    geom_text(aes(label = round(value, 2)), size = 5) +
     scale_fill_gradient(
       low = "white",
       high = "darkgreen"

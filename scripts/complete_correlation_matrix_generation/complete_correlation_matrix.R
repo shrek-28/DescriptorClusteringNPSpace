@@ -32,7 +32,7 @@ p <- ggplot(cor_melt,
   # Correlation annotations
   geom_text(
     aes(label = sprintf("%.2f", value)),
-    size = 2.0
+    size = 4.5
   ) +
   
   # Color scale
@@ -63,17 +63,17 @@ p <- ggplot(cor_melt,
     plot.title = element_text(
       face = "bold",
       hjust = 0.5,
-      size = 18
+      size = 24
     ),
     
     axis.text.x = element_text(
       angle = 90,
       vjust = 0.5,
       hjust = 1,
-      size = 8
+      size = 16
     ),
     axis.text.y = element_text(
-      size = 8
+      size = 16
     ),
     
     panel.grid = element_blank()
@@ -81,4 +81,4 @@ p <- ggplot(cor_melt,
 
 print(p)
 
-ggsave("/Users/shreyasree/Documents/GitHub/DescriptorClusteringNPSpace/plots/complete_correl_matrix/complete_spearman_matrix.pdf", plot=p, width=24, height=24)
+ggsave("/Users/shreyasree/Documents/GitHub/DescriptorClusteringNPSpace/plots/complete_correl_matrix/complete_spearman_matrix.pdf", plot=p, width=48, height=48)
