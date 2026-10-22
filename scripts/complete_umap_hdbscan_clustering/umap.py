@@ -1,6 +1,5 @@
 import numpy as np
 import umap
-import time
 from sklearn.preprocessing import PowerTransformer
 from sklearn.preprocessing import StandardScaler
 import pandas as pd
