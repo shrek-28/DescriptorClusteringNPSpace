@@ -1,5 +1,6 @@
 import numpy as np
 import umap
+import time 
 from sklearn.preprocessing import PowerTransformer
 from sklearn.preprocessing import StandardScaler
 import pandas as pd
@@ -13,7 +14,7 @@ X_transformed = pt.fit_transform(df.values)
 
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X_transformed)
-
+s
 umap_model = umap.UMAP(
     n_neighbors=30,     
     min_dist=0.30,      
