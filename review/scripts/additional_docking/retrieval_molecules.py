@@ -41,3 +41,4 @@ if __name__ == "__main__":
 
 # to run: 
 # python3 review/scripts/additional_docking/retrieval_molecules.py --input review/data/additional_docking/random_molecules_for_docking.csv --source /Users/shreyasree/Downloads/minimized_outputr/minimized_output --output review/data/additional_docking/random_molecules 
+# python3 review/scripts/additional_docking/retrieval_molecules.py --input review/data/additional_docking/representative_molecules_for_docking.csv --source /Users/shreyasree/Downloads/minimized_outputr/minimized_output --output review/data/additional_docking/representative_molecules 

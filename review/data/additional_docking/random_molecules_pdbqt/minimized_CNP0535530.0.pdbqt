@@ -1,0 +1,37 @@
+REMARK SMILES CCCCCN1C(=O)c2ccc([N+](=O)[O-])cc2S1(=O)=O
+REMARK SMILES IDX 4 1 3 2 2 3 1 4 5 5 6 6 7 7 18 8 8 9 9 10 17 11 19 12 20 13
+REMARK SMILES IDX 10 14 16 15 11 16 12 17 13 18 14 19 15 20
+REMARK H PARENT
+ROOT
+ATOM      1  C   UNL     1       2.089  -0.059  -0.920  1.00  0.00     0.023 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  C   UNL     1       3.586  -0.403  -0.860  1.00  0.00     0.002 C 
+BRANCH   2   3
+ATOM      3  C   UNL     1       4.308   0.281   0.311  1.00  0.00    -0.003 C 
+ATOM      4  C   UNL     1       5.801  -0.031   0.289  1.00  0.00     0.004 C 
+ENDBRANCH   2   3
+ENDBRANCH   1   2
+BRANCH   1   5
+ATOM      5  C   UNL     1       1.284  -0.643   0.252  1.00  0.00     0.139 C 
+BRANCH   5   6
+ATOM      6  N   UNL     1      -0.138  -0.362   0.110  1.00  0.00    -0.231 N 
+ATOM      7  C   UNL     1      -1.099  -1.305  -0.096  1.00  0.00     0.269 C 
+ATOM      8  S   UNL     1      -0.874   1.225   0.270  1.00  0.00     0.267 S 
+ATOM      9  O   UNL     1      -0.845  -2.493  -0.223  1.00  0.00    -0.268 OA
+ATOM     10  C   UNL     1      -2.474  -0.767  -0.151  1.00  0.00     0.062 A 
+ATOM     11  C   UNL     1      -2.511   0.603   0.042  1.00  0.00     0.107 A 
+ATOM     12  O   UNL     1      -0.185   2.034  -0.837  1.00  0.00    -0.201 OA
+ATOM     13  O   UNL     1      -0.357   1.673   1.645  1.00  0.00    -0.201 OA
+ATOM     14  C   UNL     1      -3.653  -1.482  -0.366  1.00  0.00     0.022 A 
+ATOM     15  C   UNL     1      -3.706   1.316   0.031  1.00  0.00     0.108 A 
+ATOM     16  C   UNL     1      -4.874  -0.787  -0.384  1.00  0.00     0.086 A 
+ATOM     17  C   UNL     1      -4.915   0.618  -0.186  1.00  0.00     0.270 A 
+BRANCH  17  18
+ATOM     18  N   UNL     1      -6.157   1.320  -0.206  1.00  0.00     0.062 N 
+ATOM     19  O   UNL     1      -7.182   0.735  -0.392  1.00  0.00    -0.258 OA
+ATOM     20  O   UNL     1      -6.191   2.623  -0.021  1.00  0.00    -0.258 OA
+ENDBRANCH  17  18
+ENDBRANCH   5   6
+ENDBRANCH   1   5
+TORSDOF 5

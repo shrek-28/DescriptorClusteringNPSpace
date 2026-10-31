@@ -1,0 +1,29 @@
+REMARK SMILES O=C(O)c1cc(CCl)c2c(c1)COCO2
+REMARK SMILES IDX 4 1 5 2 6 3 9 4 15 5 14 6 13 7 12 8 10 9 11 10 2 11 1 12
+REMARK SMILES IDX 3 13 7 15 8 16
+REMARK H PARENT 3 14
+ROOT
+ATOM      1  C   UNL     1       1.760  -0.457  -0.333  1.00  0.00     0.060 A 
+ATOM      2  C   UNL     1       1.446   0.894  -0.595  1.00  0.00     0.024 A 
+ATOM      3  C   UNL     1       0.155   1.401  -0.365  1.00  0.00     0.010 A 
+ATOM      4  C   UNL     1      -0.837   0.539   0.129  1.00  0.00     0.132 A 
+ATOM      5  O   UNL     1      -2.105   0.964   0.320  1.00  0.00    -0.467 OA
+ATOM      6  C   UNL     1      -3.126   0.040   0.434  1.00  0.00     0.395 C 
+ATOM      7  O   UNL     1      -2.788  -0.941   1.393  1.00  0.00    -0.340 OA
+ATOM      8  C   UNL     1      -1.631  -1.669   0.993  1.00  0.00     0.204 C 
+ATOM      9  C   UNL     1      -0.536  -0.795   0.416  1.00  0.00     0.021 A 
+ATOM     10  C   UNL     1       0.748  -1.297   0.177  1.00  0.00     0.025 A 
+ENDROOT
+BRANCH   1  11
+ATOM     11  C   UNL     1       3.146  -0.956  -0.597  1.00  0.00     0.335 C 
+ATOM     12  O   UNL     1       3.985  -0.188  -1.041  1.00  0.00    -0.246 OA
+BRANCH  11  13
+ATOM     13  O   UNL     1       3.519  -2.235  -0.364  1.00  0.00    -0.478 OA
+ATOM     14  H   UNL     1       2.938  -2.920  -0.014  1.00  0.00     0.297 HD
+ENDBRANCH  11  13
+ENDBRANCH   1  11
+BRANCH   3  15
+ATOM     15  C   UNL     1      -0.157   2.843  -0.668  1.00  0.00     0.149 C 
+ATOM     16  Cl  UNL     1      -0.634   3.707   0.818  1.00  0.00    -0.121 Cl
+ENDBRANCH   3  15
+TORSDOF 3
