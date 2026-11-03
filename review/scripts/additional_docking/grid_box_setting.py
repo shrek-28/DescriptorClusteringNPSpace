@@ -28,3 +28,8 @@ with open(args.output, "w") as f:
         f.write(f"size_{axis} = {value:.3f}\n")
 
 print(f"Configuration saved to {args.output}")
+
+# running:
+# python3 scripts/additional_docking/grid_box_setting.py --protein data/additional_docking/COX2_docking/COX2_cleaned_protein.pdb --output data/additional_docking/COX2_docking/COX2_gridbox.txt
+# python3 scripts/additional_docking/grid_box_setting.py --protein data/additional_docking/EGFR_docking/EGFR_cleaned_protein.pdb --output data/additional_docking/EGFR_docking/EGFR_gridbox.txt
+# python3 scripts/additional_docking/grid_box_setting.py --protein data/additional_docking/FFAR3_docking/FFAR3_cleaned_protein.pdb --output data/additional_docking/FFAR3_docking/FFAR3_gridbox.txt
