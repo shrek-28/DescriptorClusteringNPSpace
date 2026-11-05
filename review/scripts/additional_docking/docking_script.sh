@@ -43,7 +43,7 @@ time python scripts/additional_docking/mol_docking.py \
     --output data/additional_docking/COX2_docking/representative_docking_results \
     --exhaustiveness 16
 
-python scripts/additional_docking/mol_docking.py \
+time python scripts/additional_docking/mol_docking.py \
     --protein data/additional_docking/EGFR_docking/EGFR_cleaned_protein_prepared.pdbqt \
     --config data/additional_docking/EGFR_docking/EGFR_gridbox.txt \
     --ligands data/additional_docking/representative_molecules_pdbqt \
