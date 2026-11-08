@@ -14,7 +14,7 @@ X_transformed = pt.fit_transform(df.values)
 
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X_transformed)
-s
+
 umap_model = umap.UMAP(
     n_neighbors=30,     
     min_dist=0.30,      
