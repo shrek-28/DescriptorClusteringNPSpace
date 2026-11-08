@@ -29,7 +29,7 @@ time python scripts/additional_docking/mol_docking.py \
     --output data/additional_docking/EGFR_docking/random_docking_results \
     --exhaustiveness 16
 
-python scripts/additional_docking/mol_docking.py \
+time python scripts/additional_docking/mol_docking.py \
     --protein data/additional_docking/FFAR3_docking/FFAR3_cleaned_protein_prepared.pdbqt \
     --config data/additional_docking/FFAR3_docking/FFAR3_gridbox.txt \
     --ligands data/additional_docking/random_molecules_pdbqt \
