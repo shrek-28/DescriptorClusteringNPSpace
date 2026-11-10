@@ -15,7 +15,6 @@ from sklearn.metrics import (
     calinski_harabasz_score
 )
 
-
 UMAP_CONFIGS = [
     {"n_neighbors": 30, "min_dist": 0.30, "n_components": 12, "n_epochs": 150},
     {"n_neighbors": 30, "min_dist": 0.10, "n_components": 12, "n_epochs": 150},
