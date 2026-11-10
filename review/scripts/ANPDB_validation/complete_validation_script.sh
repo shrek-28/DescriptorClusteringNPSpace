@@ -21,5 +21,9 @@ python3 scripts/ANPDB_validation/umap_code.py --input data/ANPDB_validation/desc
 mkdir data/ANPDB_validation/hdbscan_model
 python3 scripts/ANPDB_validation/hdbscan_script.py --input data/ANPDB_validation/descriptor_data.csv --umap data/ANPDB_validation/umap_model/umap_model.npy --output data/ANPDB_validation/hdbscan_model
 
+# selection of random clusters and random and representative molecules for docking
 mkdir data/ANPDB_validation/hdbscan_model/stratified_data 
 python3 scripts/ANPDB_validation/hdbscan_stratification.py --cluster-sizes data/ANPDB_validation/hdbscan_model/cluster_sizes.csv --cluster-molecules data/ANPDB_validation/hdbscan_model/cluster_molecules_post.csv --representatives data/ANPDB_validation/hdbscan_model/cluster_representatives_7_per_cluster.csv --output data/ANPDB_validation/hdbscan_model/stratified_data
+
+#molecule retrieval for docking
+python3 scripts/ANPDB_validation/retrieval_for_docking.py --input data/ANPDB_validation/hdbscan_model/stratified_data/ALL_molecules_for_docking.txt --source data/ANPDB_validation/minimized_files --output data/ANPDB_validation/docking_input
