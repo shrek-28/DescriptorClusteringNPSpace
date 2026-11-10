@@ -72,7 +72,7 @@ p <- ggplot(
   scale_color_brewer(palette = "Set2") +
   
   labs(
-    title = "Docking Affinity Across Clusters by Size Stratum",
+    title = "Docking Affinity Across Clusters by Size Stratum - KEAP1",
     x = "Cluster",
     y = "Affinity (kcal/mol)",
     color = "Method"
