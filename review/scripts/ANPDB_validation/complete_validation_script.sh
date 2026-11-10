@@ -26,4 +26,29 @@ mkdir data/ANPDB_validation/hdbscan_model/stratified_data
 python3 scripts/ANPDB_validation/hdbscan_stratification.py --cluster-sizes data/ANPDB_validation/hdbscan_model/cluster_sizes.csv --cluster-molecules data/ANPDB_validation/hdbscan_model/cluster_molecules_post.csv --representatives data/ANPDB_validation/hdbscan_model/cluster_representatives_7_per_cluster.csv --output data/ANPDB_validation/hdbscan_model/stratified_data
 
 #molecule retrieval for docking
+mkdir data/ANPDB_validation/docking_input
 python3 scripts/ANPDB_validation/retrieval_for_docking.py --input data/ANPDB_validation/hdbscan_model/stratified_data/ALL_molecules_for_docking.txt --source data/ANPDB_validation/minimized_files --output data/ANPDB_validation/docking_input
+
+# converting to PDBQT files for docking
+mkdir data/ANPDB_validation/docking_input_pdbqt
+for file in data/ANPDB_validation/docking_input/*.sdf; do
+    mk_prepare_ligand.py -i "$file" -o "data/ANPDB_validation/docking_input_pdbqt/$(basename "${file%.sdf}").pdbqt"
+done
+
+mkdir data/ANPDB_validation/docking_COX2
+mkdir data/ANPDB_validation/docking_EGFR
+mkdir data/ANPDB_validation/docking_FFAR3
+
+time python scripts/additional_docking/mol_docking.py \
+    --protein data/additional_docking/COX2_docking/COX2_cleaned_protein_prepared.pdbqt \
+    --config data/additional_docking/COX2_docking/COX2_gridbox.txt \
+    --ligands data/ANPDB_validation/docking_input_pdbqt \
+    --output data/ANPDB_validation/docking_COX2/docking_results \
+    --exhaustiveness 16
+
+time python scripts/additional_docking/mol_docking.py \
+    --protein data/additional_docking/EGFR_docking/EGFR_cleaned_protein_prepared.pdbqt \
+    --config data/additional_docking/EGFR_docking/EGFR_gridbox.txt \
+    --ligands data/ANPDB_validation/docking_input_pdbqt \
+    --output data/ANPDB_validation/docking_EGFR/docking_results \
+    --exhaustiveness 16

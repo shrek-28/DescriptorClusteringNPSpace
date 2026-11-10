@@ -1,0 +1,22 @@
+REMARK SMILES COC1=CC(=O)[C@@H]2O[C@@H]2[C@@H]1O
+REMARK SMILES IDX 8 1 6 2 9 3 7 4 10 5 5 6 3 7 4 8 11 9 2 11 1 12
+REMARK H PARENT 11 10
+ROOT
+ATOM      1  O   UNL     1      -1.644  -1.024   0.674  1.00  0.00    -0.358 OA
+ATOM      2  O   UNL     1      -1.942   2.121  -0.169  1.00  0.00    -0.292 OA
+ATOM      3  C   UNL     1      -1.108  -1.423  -0.562  1.00  0.00     0.192 C 
+ATOM      4  C   UNL     1      -1.960  -0.210  -0.430  1.00  0.00     0.222 C 
+ATOM      5  C   UNL     1       0.429  -1.287  -0.547  1.00  0.00     0.212 C 
+ATOM      6  C   UNL     1      -1.273   1.104  -0.256  1.00  0.00     0.190 C 
+ATOM      7  C   UNL     1       0.994   0.111  -0.341  1.00  0.00     0.130 C 
+ATOM      8  C   UNL     1       0.196   1.195  -0.203  1.00  0.00     0.094 C 
+ENDROOT
+BRANCH   5   9
+ATOM      9  O   UNL     1       0.969  -2.174   0.400  1.00  0.00    -0.382 OA
+ATOM     10  H   UNL     1       0.732  -1.831   1.301  1.00  0.00     0.211 HD
+ENDBRANCH   5   9
+BRANCH   7  11
+ATOM     11  O   UNL     1       2.354   0.212  -0.319  1.00  0.00    -0.498 OA
+ATOM     12  C   UNL     1       3.091   1.368  -0.152  1.00  0.00     0.278 C 
+ENDBRANCH   7  11
+TORSDOF 2
