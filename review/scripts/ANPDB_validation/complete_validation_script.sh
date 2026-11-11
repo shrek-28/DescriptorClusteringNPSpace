@@ -52,3 +52,10 @@ time python scripts/additional_docking/mol_docking.py \
     --ligands data/ANPDB_validation/docking_input_pdbqt \
     --output data/ANPDB_validation/docking_EGFR/docking_results \
     --exhaustiveness 16
+
+time python scripts/additional_docking/mol_docking.py \
+    --protein data/additional_docking/FFAR3_docking/FFAR3_cleaned_protein_prepared.pdbqt \
+    --config data/additional_docking/FFAR3_docking/FFAR3_gridbox.txt \
+    --ligands data/ANPDB_validation/docking_input_pdbqt \
+    --output data/ANPDB_validation/docking_FFAR3/docking_results \
+    --exhaustiveness 16 
