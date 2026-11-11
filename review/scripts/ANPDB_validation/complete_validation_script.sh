@@ -59,3 +59,10 @@ time python scripts/additional_docking/mol_docking.py \
     --ligands data/ANPDB_validation/docking_input_pdbqt \
     --output data/ANPDB_validation/docking_FFAR3/docking_results \
     --exhaustiveness 16 
+
+time python scripts/additional_docking/docking_results_analysis.py \
+    --input data/ANPDB_validation/docking_KEAP1/8XGK_clean.pdbqt \
+    --config data/ANPDB_validation/docking_KEAP1/KEAP1_gridbox.txt \
+    --ligands data/ANPDB_validation/docking_input_pdbqt \
+    --output data/ANPDB_validation/docking_KEAP1/docking_results \
+    --exhaustiveness 16
