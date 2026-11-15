@@ -67,3 +67,7 @@ mkdir plots/ANPDB_validation
 Rscript scripts/additional_docking/plotting_script.r data/additional_docking/COX2_docking/random_vs_rep_COX2.csv plots/additional_docking/COX2_docking_plot.pdf COX2
 Rscript scripts/additional_docking/plotting_script.r data/additional_docking/EGFR_docking/random_vs_rep_EGFR.csv plots/additional_docking/EGFR_docking_plot.pdf EGFR
 Rscript scripts/additional_docking/plotting_script.r data/additional_docking/FFAR3_docking/random_vs_rep_FFAR3.csv plots/additional_docking/FFAR3_docking_plot.pdf FFAR3
+
+python3 scripts/additional_docking/difference_analysis.py --input data/additional_docking/FFAR3_docking/random_vs_rep_FFAR3.csv --output data/additional_docking/FFAR3_docking/difference_analysis 
+python3 scripts/additional_docking/difference_analysis.py --input data/additional_docking/COX2_docking/random_vs_rep_COX2.csv --output data/additional_docking/COX2_docking/difference_analysis 
+python3 scripts/additional_docking/difference_analysis.py --input data/additional_docking/EGFR_docking/random_vs_rep_EGFR.csv --output data/additional_docking/EGFR_docking/difference_analysis 

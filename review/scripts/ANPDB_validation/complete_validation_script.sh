@@ -60,6 +60,7 @@ time python scripts/additional_docking/mol_docking.py \
     --output data/ANPDB_validation/docking_FFAR3/docking_results \
     --exhaustiveness 16 
 
+cd Documents/GitHub/DescriptorClusteringNPSpace/review
 time python scripts/additional_docking/mol_docking.py \
     --protein data/ANPDB_validation/docking_KEAP1/8XGK_clean.pdbqt \
     --config data/ANPDB_validation/docking_KEAP1/KEAP1_gridbox.txt \
