@@ -48,8 +48,8 @@ def main():
             )
 
             identifier = (
-                mol.GetProp("_Name")
-                if mol.HasProp("_Name")
+                mol.GetProp("MoleculeID")
+                if mol.HasProp("MoleculeID")
                 else os.path.splitext(filename)[0]
             )
 

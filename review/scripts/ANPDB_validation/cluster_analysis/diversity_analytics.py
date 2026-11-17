@@ -46,7 +46,7 @@ def main():
     # Compute fingerprints once
     print("Computing fingerprints...")
 
-    smiles_df["fp"] = smiles_df["canonical_smiles"].apply(get_fp)
+    smiles_df["fp"] = smiles_df["SMILES"].apply(get_fp)
 
     fp_dict = dict(zip(smiles_df["identifier"], smiles_df["fp"]))
 

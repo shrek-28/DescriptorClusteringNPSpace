@@ -69,3 +69,21 @@ time python scripts/additional_docking/mol_docking.py \
     --exhaustiveness 16
 
 # all analyses - cluster characterization
+
+cd Documents/GitHub/DescriptorClusteringNPSpace/review
+mkdir data/ANPDB_validation/cluster_analysis_results
+
+# core fraction noise
+python scripts/ANPDB_validation/cluster_analysis/core_frac_noise.py --prob data/ANPDB_validation/hdbscan_model/hdbscan_core_assignments.csv --umap data/ANPDB_validation/hdbscan_model/umap_with_clusters.csv --output data/ANPDB_validation/cluster_analysis_results/core_frac_classification.csv
+# compactness and geometry 
+python scripts/ANPDB_validation/cluster_analysis/compactness_and_geometry.py --umap data/ANPDB_validation/hdbscan_model/umap_with_clusters.csv --centroids data/ANPDB_validation/hdbscan_model/cluster_centroids.csv --medoids data/ANPDB_validation/hdbscan_model/cluster_medoids.csv --core-mols data/ANPDB_validation/hdbscan_model/cluster_molecules_core.csv --post-mols data/ANPDB_validation/hdbscan_model/cluster_molecules_post.csv --output data/ANPDB_validation/cluster_analysis_results/cluster_structural_metrics_12D_full.csv
+# mean and variance probability 
+python scripts/ANPDB_validation/cluster_analysis/mean_variance_prob.py --input data/ANPDB_validation/hdbscan_model/hdbscan_core_assignments.csv --output data/ANPDB_validation/cluster_analysis_results/cluster_probability_stats.csv 
+# id + SMILES CSV file generation 
+python scripts/ANPDB_validation/cluster_analysis/sdf_to_smiles.py --input data/ANPDB_validation/split_sdf_files --output data/ANPDB_validation/cluster_analysis_results/ANPDB_smiles.csv
+# id + SMILES + DESCRIPTORS 
+python scripts/ANPDB_validation/cluster_analysis/descriptor_calculation.py --input data/ANPDB_validation/split_sdf_files --output data/ANPDB_validation/cluster_analysis_results/ANPDB_smiles_with_descriptors.csv
+# diversity analytics 
+python scripts/ANPDB_validation/cluster_analysis/diversity_analytics.py --clusters data/ANPDB_validation/hdbscan_model/cluster_molecules_post.csv --medoids data/ANPDB_validation/hdbscan_model/cluster_medoids.csv --smiles data/ANPDB_validation/cluster_analysis_results/ANPDB_smiles.csv --output data/ANPDB_validation/cluster_analysis_results/cluster_similarity_validation.csv 
+# chemical characterization 
+python scripts/ANPDB_validation/cluster_analysis/chemical_profiling.py --descriptors data/ANPDB_validation/cluster_analysis_results/ANPDB_smiles_with_descriptors.csv --clusters data/ANPDB_validation/hdbscan_model/cluster_molecules_post.csv --representatives data/ANPDB_validation/hdbscan_model/cluster_representatives_7_per_cluster.csv --output data/ANPDB_validation/cluster_analysis_results/cluster_full_chemical_profile.csv

@@ -17,7 +17,7 @@ def main():
     args = parser.parse_args()
 
     descriptor_cols = [
-        "MolWt", "LogP", "AromaticRingCount",
+        "SMILES", "MolWt", "LogP", "AromaticRingCount",
         "FractionCSP3", "TPSA", "HBD", "HBA", "RotatableBonds"
     ]
 
@@ -51,13 +51,14 @@ def main():
                 continue
 
             identifier = (
-                mol.GetProp("_Name")
-                if mol.HasProp("_Name")
+                mol.GetProp("MoleculeID")
+                if mol.HasProp("MoleculeID")
                 else os.path.splitext(filename)[0]
             )
 
             descriptors = {
                 "identifier": identifier,
+                "SMILES": Chem.MolToSmiles(mol),
                 "MolWt": Descriptors.MolWt(mol),
                 "LogP": Descriptors.MolLogP(mol),
                 "AromaticRingCount": rdMolDescriptors.CalcNumAromaticRings(mol),
@@ -71,7 +72,11 @@ def main():
             results.append(descriptors)
             valid += 1
 
-    df = pd.DataFrame(results, columns=["identifier"] + descriptor_cols)
+    df = pd.DataFrame(
+        results,
+        columns=["identifier"] + descriptor_cols
+    )
+
     df.to_csv(args.output, index=False)
 
     print("\nProcessing complete.")

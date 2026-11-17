@@ -40,14 +40,14 @@ def main():
     total_clusters = len(centroid_df)
     print(f"Total clusters to process: {total_clusters}")
 
-    for idx, cluster_id in enumerate(centroid_df["cluster_post"], 1):
+    for idx, cluster_id in enumerate(centroid_df["cluster"], 1):
 
         cluster_start = time.time()
         print(f"[{idx}/{total_clusters}] Processing cluster {cluster_id}...")
 
         # Centroid
         centroid = centroid_df.loc[
-            centroid_df["cluster_post"] == cluster_id,
+            centroid_df["cluster"] == cluster_id,
             umap_cols
         ].values
 

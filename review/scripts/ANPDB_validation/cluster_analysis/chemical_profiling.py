@@ -42,7 +42,7 @@ def main():
         return Chem.MolToSmiles(scaffold)
 
     print("Computing Murcko scaffolds...")
-    desc_df["Murcko"] = desc_df["smiles"].apply(get_scaffold)
+    desc_df["Murcko"] = desc_df["SMILES"].apply(get_scaffold)
 
     results = []
 
