@@ -96,7 +96,7 @@ python scripts/ANPDB_validation/cluster_analysis/bivariate_rep_analysis.py --inp
 # bland-altman analysis 
 python scripts/ANPDB_validation/cluster_analysis/bland_altman_analysis.py --input data/ANPDB_validation/cluster_analysis_results/cluster_full_chemical_profile.csv --output data/ANPDB_validation/cluster_analysis_results/cluster_rep_analysis/bland_altman_statistics.csv
 
-# visualizations 
+# visualizations - histograms
 mkdir plots/ANPDB_validation/dsf
 Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANPDB_validation/cluster_analysis_results/cluster_full_chemical_profile.csv --column dominant_scaffold_fraction --output plots/ANPDB_validation/dsf/dominant_scaffold_fraction_histogram.png
 
@@ -136,3 +136,22 @@ Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANP
 Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANPDB_validation/cluster_analysis_results/cluster_similarity_validation.csv --column mean_within_similarity --output plots/ANPDB_validation/cluster_physical_chars/within_cluster_similarity_histogram.png --binwidth 0.05
 Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANPDB_validation/cluster_analysis_results/cluster_similarity_validation.csv --column separation_ratio --output plots/ANPDB_validation/cluster_physical_chars/separation_ratio_histogram.png --binwidth 0.5
 
+# visualizations - scatterplots 
+mkdir plots/ANPDB_validation/scatterplots
+Rscript scripts/ANPDB_validation/visualization/scatterplot_single_file.R --input data/ANPDB_validation/cluster_analysis_results/core_frac_classification.csv --x-col core_size --y-col post_noise_size --output plots/ANPDB_validation/scatterplots/core_vs_post_noise_size_scatterplot.pdf 
+
+Rscript scripts/ANPDB_validation/visualization/scatterplot_single_file.R --input data/ANPDB_validation/cluster_analysis_results/cluster_structural_metrics_12D_full.csv --x-col std_distance_post --y-col mean_distance_post --output plots/ANPDB_validation/scatterplots/mean_vs_std_dist_post_scatterplot.pdf 
+Rscript scripts/ANPDB_validation/visualization/scatterplot_single_file.R --input data/ANPDB_validation/cluster_analysis_results/cluster_structural_metrics_12D_full.csv --x-col mean_distance_post --y-col mean_distance_core --output plots/ANPDB_validation/scatterplots/mean_dist_core_vs_mean_dist_post_scatterplot.pdf 
+Rscript scripts/ANPDB_validation/visualization/scatterplot_single_file.R --input data/ANPDB_validation/cluster_analysis_results/cluster_structural_metrics_12D_full.csv --x-col covariance_volume --y-col mean_distance_post --output plots/ANPDB_validation/scatterplots/mean_dist_post_vs_cov_vol_scatterplot.pdf 
+Rscript scripts/ANPDB_validation/visualization/scatterplot_single_file.R --input data/ANPDB_validation/cluster_analysis_results/cluster_structural_metrics_12D_full.csv --x-col medoid_centroid_distance --y-col mean_distance_post --output plots/ANPDB_validation/scatterplots/mean_dist_post_vs_medoid_centroid_dist_scatterplot.pdf 
+
+Rscript scripts/ANPDB_validation/visualization/scatterplot_single_file.R --input data/ANPDB_validation/cluster_analysis_results/cluster_similarity_validation.csv --x-col mean_between_medoid_similarity --y-col mean_within_similarity --output plots/ANPDB_validation/scatterplots/mean_wi_sim_vs_mean_bw_medoid_sim_scatterplot.pdf 
+Rscript scripts/ANPDB_validation/visualization/scatterplot_single_file.R --input data/ANPDB_validation/cluster_analysis_results/cluster_similarity_validation.csv --x-col mean_within_similarity --y-col separation_ratio --output plots/ANPDB_validation/scatterplots/sep_ratio_vs_mean_wi_sim_scatterplot.pdf 
+
+Rscript scripts/ANPDB_validation/visualization/scatterplot_single_file.R --input data/ANPDB_validation/cluster_analysis_results/cluster_probability_stats.csv --x-col mean_probability --y-col variance_probability --output plots/ANPDB_validation/scatterplots/var_vs_mean_prob_scatterplot.pdf 
+Rscript scripts/ANPDB_validation/visualization/scatterplot_single_file.R --input data/ANPDB_validation/cluster_analysis_results/cluster_probability_stats.csv --x-col mean_probability --y-col IQR_probability --output plots/ANPDB_validation/scatterplots/IQR_vs_mean_prob_scatterplot.pdf 
+
+Rscript scripts/ANPDB_validation/visualization/scatterplot_single_file.R --input data/ANPDB_validation/cluster_analysis_results/cluster_full_chemical_profile.csv --x-col LogP_mean --y-col TPSA_mean --output plots/ANPDB_validation/scatterplots/TPSA_vs_LogP_mean_scatterplot.pdf 
+Rscript scripts/ANPDB_validation/visualization/scatterplot_single_file.R --input data/ANPDB_validation/cluster_analysis_results/cluster_full_chemical_profile.csv --x-col MolWt_mean --y-col LogP_mean --output plots/ANPDB_validation/scatterplots/LogP_vs_MolWt_mean_scatterplot.pdf 
+Rscript scripts/ANPDB_validation/visualization/scatterplot_single_file.R --input data/ANPDB_validation/cluster_analysis_results/cluster_full_chemical_profile.csv --x-col FractionCSP3_mean --y-col LogP_mean --output plots/ANPDB_validation/scatterplots/FracCSP3_vs_LogP_mean_scatterplot.pdf 
+Rscript scripts/ANPDB_validation/visualization/scatterplot_single_file.R --input data/ANPDB_validation/cluster_analysis_results/cluster_full_chemical_profile.csv --x-col FractionCSP3_mean --y-col TPSA_mean --output plots/ANPDB_validation/scatterplots/FracCSP3_vs_TPSA_mean_scatterplot.pdf 
