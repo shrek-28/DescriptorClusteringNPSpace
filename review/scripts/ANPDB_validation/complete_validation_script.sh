@@ -87,3 +87,11 @@ python scripts/ANPDB_validation/cluster_analysis/descriptor_calculation.py --inp
 python scripts/ANPDB_validation/cluster_analysis/diversity_analytics.py --clusters data/ANPDB_validation/hdbscan_model/cluster_molecules_post.csv --medoids data/ANPDB_validation/hdbscan_model/cluster_medoids.csv --smiles data/ANPDB_validation/cluster_analysis_results/ANPDB_smiles.csv --output data/ANPDB_validation/cluster_analysis_results/cluster_similarity_validation.csv 
 # chemical characterization 
 python scripts/ANPDB_validation/cluster_analysis/chemical_profiling.py --descriptors data/ANPDB_validation/cluster_analysis_results/ANPDB_smiles_with_descriptors.csv --clusters data/ANPDB_validation/hdbscan_model/cluster_molecules_post.csv --representatives data/ANPDB_validation/hdbscan_model/cluster_representatives_7_per_cluster.csv --output data/ANPDB_validation/cluster_analysis_results/cluster_full_chemical_profile.csv
+
+mkdir data/ANPDB_validation/cluster_analysis_results/cluster_rep_analysis 
+# representative difference analysis 
+python scripts/ANPDB_validation/cluster_analysis/rep_difference_analysis.py --input data/ANPDB_validation/cluster_analysis_results/cluster_full_chemical_profile.csv --stats-output data/ANPDB_validation/cluster_analysis_results/cluster_rep_analysis/representative_analysis.csv --difference-output data/ANPDB_validation/cluster_analysis_results/cluster_rep_analysis/representative_difference_analysis.csv
+# bivariate representative analysis 
+python scripts/ANPDB_validation/cluster_analysis/bivariate_rep_analysis.py --input data/ANPDB_validation/cluster_analysis_results/cluster_full_chemical_profile.csv --output data/ANPDB_validation/cluster_analysis_results/cluster_rep_analysis/descriptor_regression_statistics.csv
+# bland-altman analysis 
+python scripts/ANPDB_validation/cluster_analysis/bland_altman_analysis.py --input data/ANPDB_validation/cluster_analysis_results/cluster_full_chemical_profile.csv --output data/ANPDB_validation/cluster_analysis_results/cluster_rep_analysis/bland_altman_statistics.csv
