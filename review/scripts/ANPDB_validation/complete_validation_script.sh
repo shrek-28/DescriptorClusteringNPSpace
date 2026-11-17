@@ -95,3 +95,45 @@ python scripts/ANPDB_validation/cluster_analysis/rep_difference_analysis.py --in
 python scripts/ANPDB_validation/cluster_analysis/bivariate_rep_analysis.py --input data/ANPDB_validation/cluster_analysis_results/cluster_full_chemical_profile.csv --output data/ANPDB_validation/cluster_analysis_results/cluster_rep_analysis/descriptor_regression_statistics.csv
 # bland-altman analysis 
 python scripts/ANPDB_validation/cluster_analysis/bland_altman_analysis.py --input data/ANPDB_validation/cluster_analysis_results/cluster_full_chemical_profile.csv --output data/ANPDB_validation/cluster_analysis_results/cluster_rep_analysis/bland_altman_statistics.csv
+
+# visualizations 
+mkdir plots/ANPDB_validation/dsf
+Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANPDB_validation/cluster_analysis_results/cluster_full_chemical_profile.csv --column dominant_scaffold_fraction --output plots/ANPDB_validation/dsf/dominant_scaffold_fraction_histogram.png
+
+mkdir plots/ANPDB_validation/desc_means
+Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANPDB_validation/cluster_analysis_results/cluster_full_chemical_profile.csv --column MolWt_mean --output plots/ANPDB_validation/desc_means/MolWt_mean_histogram.png
+Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANPDB_validation/cluster_analysis_results/cluster_full_chemical_profile.csv --column LogP_mean --output plots/ANPDB_validation/desc_means/LogP_mean_histogram.png
+Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANPDB_validation/cluster_analysis_results/cluster_full_chemical_profile.csv --column AromaticRingCount_mean --output plots/ANPDB_validation/desc_means/AromaticRingCount_mean_histogram.png --binwidth 1
+Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANPDB_validation/cluster_analysis_results/cluster_full_chemical_profile.csv --column FractionCSP3_mean --output plots/ANPDB_validation/desc_means/FractionCSP3_mean_histogram.png
+Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANPDB_validation/cluster_analysis_results/cluster_full_chemical_profile.csv --column TPSA_mean --output plots/ANPDB_validation/desc_means/TPSA_mean_histogram.png
+Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANPDB_validation/cluster_analysis_results/cluster_full_chemical_profile.csv --column HBA_mean --output plots/ANPDB_validation/desc_means/HBA_mean_histogram.png --binwidth 1
+Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANPDB_validation/cluster_analysis_results/cluster_full_chemical_profile.csv --column HBD_mean --output plots/ANPDB_validation/desc_means/HBD_mean_histogram.png --binwidth 1
+Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANPDB_validation/cluster_analysis_results/cluster_full_chemical_profile.csv --column RotatableBonds_mean --output plots/ANPDB_validation/desc_means/RotatableBonds_mean_histogram.png --binwidth 1
+
+mkdir plots/ANPDB_validation/desc_medians 
+Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANPDB_validation/cluster_analysis_results/cluster_full_chemical_profile.csv --column MolWt_median --output plots/ANPDB_validation/desc_medians/MolWt_median_histogram.png
+Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANPDB_validation/cluster_analysis_results/cluster_full_chemical_profile.csv --column LogP_median --output plots/ANPDB_validation/desc_medians/LogP_median_histogram.png
+Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANPDB_validation/cluster_analysis_results/cluster_full_chemical_profile.csv --column AromaticRingCount_median --output plots/ANPDB_validation/desc_medians/AromaticRingCount_median_histogram.png --binwidth 1
+Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANPDB_validation/cluster_analysis_results/cluster_full_chemical_profile.csv --column FractionCSP3_median --output plots/ANPDB_validation/desc_medians/FractionCSP3_median_histogram.png
+Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANPDB_validation/cluster_analysis_results/cluster_full_chemical_profile.csv --column TPSA_median --output plots/ANPDB_validation/desc_medians/TPSA_median_histogram.png
+Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANPDB_validation/cluster_analysis_results/cluster_full_chemical_profile.csv --column HBA_median --output plots/ANPDB_validation/desc_medians/HBA_median_histogram.png --binwidth 1
+Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANPDB_validation/cluster_analysis_results/cluster_full_chemical_profile.csv --column HBD_median --output plots/ANPDB_validation/desc_medians/HBD_median_histogram.png --binwidth 1
+Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANPDB_validation/cluster_analysis_results/cluster_full_chemical_profile.csv --column RotatableBonds_median --output plots/ANPDB_validation/desc_medians/RotatableBonds_median_histogram.png --binwidth 1
+
+mkdir plots/ANPDB_validation/cluster_physical_chars
+Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANPDB_validation/cluster_analysis_results/core_frac_classification.csv --column core_fraction --output plots/ANPDB_validation/cluster_physical_chars/core_fraction_histogram.png
+Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANPDB_validation/cluster_analysis_results/core_frac_classification.csv --column core_size --output plots/ANPDB_validation/cluster_physical_chars/core_size_histogram.png
+Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANPDB_validation/cluster_analysis_results/core_frac_classification.csv --column post_noise_size --output plots/ANPDB_validation/cluster_physical_chars/post_noise_size_histogram.png
+Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANPDB_validation/cluster_analysis_results/core_frac_classification.csv --column prob_IQR --output plots/ANPDB_validation/cluster_physical_chars/prob_IQR_histogram.png
+
+Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANPDB_validation/cluster_analysis_results/cluster_structural_metrics_12D_full.csv --column mean_distance_core --output plots/ANPDB_validation/cluster_physical_chars/mean_distance_core_histogram.png
+Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANPDB_validation/cluster_analysis_results/cluster_structural_metrics_12D_full.csv --column mean_distance_post --output plots/ANPDB_validation/cluster_physical_chars/mean_distance_post_histogram.png
+Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANPDB_validation/cluster_analysis_results/cluster_structural_metrics_12D_full.csv --column density_gradient --output plots/ANPDB_validation/cluster_physical_chars/density_gradient_histogram.png
+Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANPDB_validation/cluster_analysis_results/cluster_structural_metrics_12D_full.csv --column medoid_centroid_distance --output plots/ANPDB_validation/cluster_physical_chars/medoid_centroid_distance_histogram.png
+
+Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANPDB_validation/cluster_analysis_results/cluster_probability_stats.csv --column mean_probability --output plots/ANPDB_validation/cluster_physical_chars/mean_probability_histogram.png
+
+Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANPDB_validation/cluster_analysis_results/cluster_similarity_validation.csv --column within_cluster_similarity --output plots/ANPDB_validation/cluster_physical_chars/within_cluster_similarity_histogram.png
+Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANPDB_validation/cluster_analysis_results/cluster_similarity_validation.csv --column mean_between_medoid_similarity --output plots/ANPDB_validation/cluster_physical_chars/mean_between_medoid_similarity_histogram.png
+Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANPDB_validation/cluster_analysis_results/cluster_similarity_validation.csv --column separation_ratio --output plots/ANPDB_validation/cluster_physical_chars/separation_ratio_histogram.png
+
