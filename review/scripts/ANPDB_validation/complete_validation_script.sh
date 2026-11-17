@@ -133,7 +133,6 @@ Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANP
 
 Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANPDB_validation/cluster_analysis_results/cluster_probability_stats.csv --column mean_probability --output plots/ANPDB_validation/cluster_physical_chars/mean_probability_histogram.png
 
-Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANPDB_validation/cluster_analysis_results/cluster_similarity_validation.csv --column within_cluster_similarity --output plots/ANPDB_validation/cluster_physical_chars/within_cluster_similarity_histogram.png
-Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANPDB_validation/cluster_analysis_results/cluster_similarity_validation.csv --column mean_between_medoid_similarity --output plots/ANPDB_validation/cluster_physical_chars/mean_between_medoid_similarity_histogram.png
-Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANPDB_validation/cluster_analysis_results/cluster_similarity_validation.csv --column separation_ratio --output plots/ANPDB_validation/cluster_physical_chars/separation_ratio_histogram.png
+Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANPDB_validation/cluster_analysis_results/cluster_similarity_validation.csv --column mean_within_similarity --output plots/ANPDB_validation/cluster_physical_chars/within_cluster_similarity_histogram.png --binwidth 0.05
+Rscript scripts/ANPDB_validation/visualization/histogram_code.R --input data/ANPDB_validation/cluster_analysis_results/cluster_similarity_validation.csv --column separation_ratio --output plots/ANPDB_validation/cluster_physical_chars/separation_ratio_histogram.png --binwidth 0.5
 
