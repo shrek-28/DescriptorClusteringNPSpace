@@ -67,3 +67,5 @@ time python scripts/additional_docking/mol_docking.py \
     --ligands data/ANPDB_validation/docking_input_pdbqt \
     --output data/ANPDB_validation/docking_KEAP1/docking_results \
     --exhaustiveness 16
+
+# all analyses - cluster characterization
